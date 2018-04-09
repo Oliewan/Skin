@@ -1,0 +1,177 @@
+
+VT $Tpt="¡¾Data source¡¿",
+VT $Tct="¡¾City tier¡¿",
+VT $Tregion="¡¾Region¡¿",
+VT $TQ1="¡¾Age¡¿ How old are you? (Single)",
+VT $TQ2="¡¾Income¡¿ What is your personal monthly income?(Single)",
+
+
+
+VT $TQ3="¡¾Q3¡¿ TOMA",
+VT $TQ4="¡¾Q4¡¿ UBA",
+VT $TQ5="¡¾Q5¡¿ ABA",
+VT $TQ5b="¡¾Q5b¡¿ P3M",
+VT $TQ6="¡¾Q6¡¿Copy Awareness - Please select the copy you've seen recently",
+
+VT $TQ7b1="¡¾Q7-1¡¿ Copy Brand Linkage-Olay Bride to be(110182)",                                                                     
+VT $TQ7b2="¡¾Q7-2¡¿ Copy Brand Linkage-Olay Song Qian TVC(110178)",                                                                             
+VT $TQ7b3="¡¾Q7-3¡¿ Copy Brand Linkage-Loreal Celebrity articles(Wu Yifan|Show|Loreal mine mud long-term oil control cleansing milk) ",                        
+VT $TQ7b4="¡¾Q7-4¡¿ Copy Brand Linkage-Estee Lauder Makeup Liquid Foundation",                                                       
+VT $TQ7b5="¡¾Q7-5¡¿ Copy Brand Linkage-Estee Lauder Celebrity articles(Yang Mi|Show|Pure translucent skin)  Nutritious Vitality Radiant Energy Lotion(110179)", 
+VT $TQ7b6="¡¾Q7-6¡¿ Copy Brand Linkage-Lancome Genifique Yeux Light-Pearl (110180)",                                
+VT $TQ7b7="¡¾Q7-7¡¿ Copy Brand Linkage-Kans Hydrating Silky Essence Mask(110181)",                                           
+VT $TQ7b8="¡¾Q7-8¡¿ Copy Brand Linkage-Aupres Base Care Essence II Golden Circulation (110172)", 
+VT $TQ7b9="¡¾Q7-9¡¿ Copy Brand Linkage-Loreal Celebrity articles(Dilireba|Show) (110176)", 
+
+VT $TQ7b10="¡¾Q7-10¡¿ Copy Brand Linkage-Lancome Advanced Genifique Sensitive-Show articles(Lady show)-15s  ",     
+VT $TQ7b11="¡¾Q7-11¡¿ Copy Brand Linkage-Loreal Revitalift Pure Centella Micro.essence Water-Celebrity articles(Gongli shows)-15s      ",    
+VT $TQ7b12="¡¾Q7-12¡¿ Copy Brand Linkage-Loreal Youth Code Pre.essent Eye Essence-Celebrity articles Dilireba-15s",    
+VT $TQ7b13="¡¾Q7-13¡¿ Copy Brand Linkage-Estee Lauder Advanced Night Repair-Show-15s              ",     
+VT $TQ7b14="¡¾Q7-14¡¿ Copy Brand Linkage-Olay Ruler_170522_GYY 15s_RC                      ",     
+VT $TQ7b15="¡¾Q7-15¡¿ Copy Brand Linkage-Olay-Mom-2mins-Sep¡®17                            ",    
+VT $TQ7b16="¡¾Q7-16¡¿ Copy Brand Linkage-Olay_CELL SCIENCE_RG_15S_DIGITAL NATIONAL_HD       ",         
+VT $TQ7b17="¡¾Q7-17¡¿ Copy Brand Linkage-Olay Trueview--28 Day AA final--Tianmao conventional tagon           ",     
+VT $TQ7b18="¡¾Q7-18¡¿ Copy Brand Linkage-Estee Lauder Advanced Night Repair Eye Concentrate Matrix             ", 
+VT $TQ7b19="¡¾Q7-19¡¿ Copy Brand Linkage-Olay He Sui 60s Magic AA vedio                      ",     
+VT $TQ7b20="¡¾Q7-20¡¿ Copy Brand Linkage-Pechoin Sanshenghua 15s                            ",    
+VT $TQ7b21="¡¾Q7-21¡¿ Copy Brand Linkage-Kans 1208VIP       ",         
+VT $TQ7b22="¡¾Q7-22¡¿ Copy Brand Linkage-Lancome Absolue precious cells revitalizing care-silky cream          ",     
+VT $TQ7b23="¡¾Q7-23¡¿ Copy Brand Linkage-Estee Lauder Revitalizing superme+ global anti-aging power soft creme            ",   
+VT $TQ7b24="¡¾Q7-24¡¿ Copy Brand Linkage-Magic AA ",
+VT $TQ7b25="¡¾Q7-25¡¿ Copy Brand Linkage-White_15s_universal(HDCAM)_2   ",
+VT $TQ7b26="¡¾Q7-26¡¿ Copy Brand Linkage-Olay_CL_Tmall_rev5_HD  ",
+VT $TQ7b27="¡¾Q7-27¡¿ Copy Brand Linkage-Xiaohongpingjushuiguangjinghua20180206 ",
+VT $TQ7b28="¡¾Q7-28¡¿ Copy Brand Linkage-Lancome xiaoheipinganpingjinghua180227 ",
+VT $TQ7b29="¡¾Q7-29¡¿ Copy Brand Linkage-Lancome hufupin180130  ",
+VT $TQ7b30="¡¾Q7-30¡¿ Copy Brand Linkage-Sanshenghuahuaniangshui",
+VT $TQ7b31="¡¾Q7-31¡¿ Copy Brand Linkage-Loreal jixuecaoweijinghualu180102  ",
+VT $TQ7b32="¡¾Q7-32¡¿ Copy Brand Linkage-Estee Lauder xiaozongpingjinghua   ",
+
+  
+
+VT $TQ801="¡¾Q8-01¡¿ Copy aware source(TV/Digital)-Olay Bride to be(110182)",                                                                                              
+VT $TQ802="¡¾Q8-02¡¿ Copy aware source(TV/Digital)-Olay Song Qian TVC(110178)",                                                                                            
+VT $TQ803="¡¾Q8-03¡¿ Copy aware source(TV/Digital)-Loreal Celebrity articles(Wu Yifan|Show|Loreal mine mud long-term oil control cleansing milk) ",                        
+VT $TQ804="¡¾Q8-04¡¿ Copy aware source(TV/Digital)-Estee Lauder Makeup Liquid Foundation",                                                                                 
+VT $TQ805="¡¾Q8-05¡¿ Copy aware source(TV/Digital)-Estee Lauder Celebrity articles(Yang Mi|Show|Pure translucent skin)  Nutritious Vitality Radiant Energy Lotion(110179)",
+VT $TQ806="¡¾Q8-06¡¿ Copy aware source(TV/Digital)-Lancome Genifique Yeux Light-Pearl (110180)",                                                                           
+VT $TQ807="¡¾Q8-07¡¿ Copy aware source(TV/Digital)-Kans Hydrating Silky Essence Mask(110181)",                                                                             
+VT $TQ808="¡¾Q8-08¡¿ Copy aware source(TV/Digital)-Aupres Base Care Essence II Golden Circulation (110172)",                                                               
+VT $TQ809="¡¾Q8-09¡¿ Copy aware source(TV/Digital)-Loreal Celebrity articles(Dilireba|Show) (110176)",                                                                     
+VT $TQ8010="¡¾Q8-10¡¿ Copy aware source-Lancome Advanced Genifique Sensitive-Show articles(Lady show)-15s  ",                              
+VT $TQ8011="¡¾Q8-11¡¿ Copy aware source-Loreal Revitalift Pure Centella Micro.essence Water-Celebrity articles(Gongli shows)-15s      ",   
+VT $TQ8012="¡¾Q8-12¡¿ Copy aware source-Loreal Youth Code Pre.essent Eye Essence-Celebrity articles Dilireba-15s",                         
+VT $TQ8013="¡¾Q8-13¡¿ Copy aware source-Estee Lauder Advanced Night Repair-Show-15s              ",                                        
+VT $TQ8014="¡¾Q8-14¡¿ Copy aware source-Olay Ruler_170522_GYY 15s_RC                      ",                                               
+VT $TQ8015="¡¾Q8-15¡¿ Copy aware source-Olay-Mom-2mins-Sep¡®17                            ",                                               
+VT $TQ8016="¡¾Q8-16¡¿ Copy aware source-Olay_CELL SCIENCE_RG_15S_DIGITAL NATIONAL_HD       ",                                              
+VT $TQ8017="¡¾Q8-17¡¿ Copy aware source-Olay Trueview--28 Day AA final--Tianmao conventional tagon           ",                            
+VT $TQ8018="¡¾Q8-18¡¿ Copy aware source-Estee Lauder Advanced Night Repair Eye Concentrate Matrix             ",                           
+VT $TQ8019="¡¾Q8-19¡¿ Copy aware source-Olay He Sui 60s Magic AA vedio                      ",                                             
+VT $TQ8020="¡¾Q8-20¡¿ Copy aware source-Pechoin Sanshenghua 15s                            ",                                              
+VT $TQ8021="¡¾Q8-21¡¿ Copy aware source-Kans 1208VIP       ",                                                                              
+VT $TQ8022="¡¾Q8-22¡¿ Copy aware source-Lancome Absolue precious cells revitalizing care-silky cream          ",                           
+VT $TQ8023="¡¾Q8-23¡¿ Copy aware source-Estee Lauder Revitalizing superme+ global anti-aging power soft creme            ",                
+VT $TQ8024="¡¾Q8-24¡¿ Copy aware source-Magic AA            ", 
+VT $TQ8025="¡¾Q8-25¡¿ Copy aware source-White_15s_universal(HDCAM)_2  ", 
+VT $TQ8026="¡¾Q8-26¡¿ Copy aware source-Olay_CL_Tmall_rev5_HD ", 
+VT $TQ8027="¡¾Q8-27¡¿ Copy aware source-Xiaohongpingjushuiguangjinghua20180206", 
+VT $TQ8028="¡¾Q8-28¡¿ Copy aware source-Lancome xiaoheipinganpingjinghua180227", 
+VT $TQ8029="¡¾Q8-29¡¿ Copy aware source-Lancome hufupin180130 ", 
+VT $TQ8030="¡¾Q8-30¡¿ Copy aware source-Sanshenghuahuaniangshui   ", 
+VT $TQ8031="¡¾Q8-31¡¿ Copy aware source-Loreal jixuecaoweijinghualu180102 ", 
+VT $TQ8032="¡¾Q8-32¡¿ Copy aware source-Estee Lauder xiaozongpingjinghua  ", 
+
+VT $TTQ901="¡¾Q9-01¡¿ Equity Attributes - Aupres",
+VT $TTQ902="¡¾Q9-02¡¿ Equity Attributes - Herborist",
+VT $TTQ903="¡¾Q9-03¡¿ Equity Attributes - Chcedo",
+VT $TTQ904="¡¾Q9-04¡¿ Equity Attributes - Clinique",
+VT $TTQ905="¡¾Q9-05¡¿ Equity Attributes - Dabao",
+VT $TTQ906="¡¾Q9-06¡¿ Equity Attributes - Estee Lauder",
+VT $TTQ907="¡¾Q9-07¡¿ Equity Attributes - Pechoin",
+VT $TTQ908="¡¾Q9-08¡¿ Equity Attributes - Innisfree",
+VT $TTQ909="¡¾Q9-09¡¿ Equity Attributes - Inoherb",
+VT $TTQ9010="¡¾Q9-10¡¿ Equity Attributes - Kans",
+VT $TTQ9011="¡¾Q9-11¡¿ Equity Attributes - Lancome",
+VT $TTQ9012="¡¾Q9-12¡¿ Equity Attributes - Loreal",
+VT $TTQ9013="¡¾Q9-13¡¿ Equity Attributes - Olay",
+VT $TTQ9014="¡¾Q9-14¡¿ Equity Attributes - SK-II",
+VT $TTQ9015="¡¾Q9-15¡¿ Equity Attributes - Vichy",
+                                              
+
+
+VT $TQ10ad="¡¾Q10a¡¿ BUMO Channel",
+VT $TQ10bd="¡¾Q10b¡¿ BUMO Channel",
+VT $TQ11="¡¾Q11¡¿ Please tell me whether you are colleage students or not?£¨Single£©",
+
+
+
+
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+
+
+
+dm x $h2=     
+$W/6.$sl/n1          :"National***total",
+
+$w/6.$sl/n1.$Q1/1       :"Age***18-24*([~1])", 
+$w/6.$sl/n1.$Q1/2       :"25-34*([~2])",
+$w/6.$sl/n1.$Q1/3       :"35-44*([~3])",
+$w/6.$sl/n1.$Q1/4       :"45-55*([~4])",
+
+$w/6.$sl/n1.$CT/1       :"City tier***Top 4 City*([~1])",
+$w/6.$sl/n1.($CT/1+2)   :"Top 4+A*([~2])",
+$w/6.$sl/n1.$CT/2       :"A City*([~3])",
+$w/6.$sl/n1.$CT/3       :"B City*([~4])",
+
+$w/6.$sl/n1.($Q2/1+2)  :"Income***China1+/1*([~1])",
+$w/6.$sl/n1.$Q2/1  :"China1+*([~2])",
+$w/6.$sl/n1.$Q2/2  :"China1*([~3])",
+$w/6.$sl/n1.($Q2/3+4)  :"China2&3*([~4])",  
+$w/6.$sl/n1.$Q2/3  :"China2*([~5])",
+$w/6.$sl/n1.$Q2/4  :"China3*([~6])",
+
+$w/6.$q1/2.($q2/1+2) :"25-34&China1+/1***([~1])",
+
+xt $h2="Header B ",
+
+dm x $h3=     
+t:"Summary brand***Aupres*([~1])",
+t:"Herborist*([~2])",
+t:"Chcedo*([~3])",
+t:"Clinique*([~4])",
+t:"Dabao*([~5])",
+t:"Estee Lauder*([~6])",
+t:"Pechoin*([~7])",
+t:"Innisfree*([~8])",
+t:"Inoherb*([~9])",
+t:"Kans*([~10])",
+t:"Lancome*([~11])",
+t:"Loreal*([~12])",
+t:"Olay*([~13])",
+t:"SK-ll*([~14])",
+t:"Vichy*([~15])",
+
+
+xt $h3="Equity attributes ",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

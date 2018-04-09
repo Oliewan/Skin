@@ -1,0 +1,99 @@
+!base number ; definition ; base label
+!note - base number should not duplidated
+
+[*data 999(m=p,t=;)=
+1;t;Base-Total Respondents;
+2;($m/2).$Q5/1;Base-M2-Know about Aupres;
+3;($m/2).$Q5/2;Base-M2-Know about Herborist;
+4;($m/2).$Q5/3;Base-M2-Know about Chcedo;
+5;($m/2).$Q5/4;Base-M2-Know about Clinique;
+6;($m/2).$Q5/5;Base-M2-Know about Dabao;
+7;($m/2).$Q5/6;Base-M2-Know about Estee Lauder;
+8;($m/2).$Q5/7;Base-M2-Know about Pechoin;
+9;($m/2).$Q5/8;Base-M2-Know about Innisfree;
+10;($m/2).$Q5/9;Base-M2-Know about Inoherb;
+11;($m/2).$Q5/10;Base-M2-Know about Kans;
+12;($m/2).$Q5/11;Base-M2-Know about Lancome;
+13;($m/2).$Q5/12;Base-M2-Know about Loreal;
+14;($m/2).$Q5/13;Base-M2-Know about Olay;
+15;($m/2).$Q5/14;Base-M2-Know about SK-II;
+16;($m/2).$Q5/15;Base-M2-Know about Vichy;
+          
+17;$Q6/1;Base-Olay Bride to be(110182);                                                                  
+18;$Q6/2;Base-Olay Song Qian TVC(110178);                                                                          
+19;$Q6/3;Base-Loreal Celebrity articles(Wu Yifan|Show|Loreal mine mud long-term oil control cleansing milk) ;                       
+20;$Q6/4;Base-Estee Lauder Makeup Liquid Foundation;                                                    
+21;$Q6/5;Base-Estee Lauder Celebrity articles(Yang Mi|Show|Pure translucent skin)  Nutritious Vitality Radiant Energy Lotion(110179);
+22;$Q6/6;Base-Lancome Genifique Yeux Light-Pearl (110180);                             
+23;$Q6/7;Base-Kans Hydrating Silky Essence Mask(110181);                                        
+24;$Q6/8;Base-Aupres Base Care Essence II Golden Circulation (110172);
+25;$Q6/9;Base-Loreal Celebrity articles(Dilireba|Show) (110176)   ;   
+26;$Q6/10;Base-Lancome Advanced Genifique Sensitive-Show articles(Lady show)-15s;                 
+27;$Q6/11;Base-Loreal Revitalift Pure Centella Micro.essence Water-Celebrity articles(Gongli shows)-15s ;                    
+28;$Q6/12;Base-Loreal Youth Code Pre.essent Eye Essence-Celebrity articles Dilireba-15s;              
+29;$Q6/13;Base-Estee Lauder Advanced Night Repair-Show-15s;                 
+30;$Q6/14;Base-Olay Ruler_170522_GYY 15s_RC;                             
+31;$Q6/15;Base-Olay-Mom-2mins-Sep‘17;                               
+32;$Q6/16;Base-Olay_CELL SCIENCE_RG_15S_DIGITAL NATIONAL_HD ;                            
+33;$Q6/17;Base-Olay Trueview--28 Day AA final--Tianmao conventional tagon;                       
+34;$Q6/18;Base-Estee Lauder Advanced Night Repair Eye Concentrate Matrix  ; 
+          
+35;$Q6/10;Base-Lancome Advanced Genifique Sensitive-Show articles(Lady show)-15s;                                         
+36;$Q6/11;Base-Loreal Revitalift Pure Centella Micro.essence Water-Celebrity articles(Gongli shows)-15s ;                 
+37;$Q6/12;Base-Loreal Youth Code Pre.essent Eye Essence-Celebrity articles Dilireba-15s;                                  
+38;($CORNOV/1.$Q6/18)+($CORNOV/0.$Q6/13);Base-Estee Lauder Advanced Night Repair-Show-15s;                              
+39;($CORNOV/1.$q6/13)+($CORNOV/0.$Q6/14);Base-Olay Ruler_170522_GYY 15s_RC;                                           
+40;($CORNOV/1.$q6/14)+($CORNOV/0.$Q6/15);Base-Olay-Mom-2mins-Sep‘17;                                                 
+41;$Q6/16 ;Base-Olay_CELL SCIENCE_RG_15S_DIGITAL NATIONAL_HD ;                     
+42;($CORNOV/1.$q6/15)+($CORNOV/0.$Q6/17);Base-Olay Trueview--28 Day AA final--Tianmao conventional tagon;                          
+43;($CORNOV/1.$q6/17)+($CORNOV/0.$Q6/18);Base-Estee Lauder Advanced Night Repair Eye Concentrate Matrix  ; 
+
+44;$m/2;M2 ;
+45;($m/2.$W/3)+($m/2.$W/4);Nov&Dec-M2;                                                                           
+46;$m/2.$W/1;Aug-M2; 
+47;$m/2.$W/2;Sep-M2;
+
+48;$Q5/1..15;ABA主品牌;
+49;$W/1.$Q5/1..15;ABA主品牌-Aug;
+50;$W/2.$Q5/1..15;ABA主品牌-Sep;
+51;$W/3.$Q5/1..15;ABA主品牌-Nov;                           
+
+
+52;$Q6/19 ;Olay He Sui 60s Magic AA vedio;                                     
+53;$Q6/20 ;Pechoin Sanshenghua 15s;                                           
+54;$Q6/21 ;Kans 1208VIP;                     
+55;$Q6/22 ;Lancome Absolue precious cells revitalizing care-silky cream;                         
+56;$Q6/23 ;Estee Lauder Revitalizing superme+ global anti-aging power soft creme                                                         
+                            
+]                           
+  [*do i=1:[999.#]:3][*set BaseNo=999.i]
+    ds $bb[BaseNo]=[999.i+1],
+    x  $bb[BaseNo]='Base [BaseNo] - [999.i+2]',
+    xt $bb[BaseNo]='Base [BaseNo] - [999.i+2]',
+                            
+    [*set Base[BaseNo]='[999.i+2]']
+  [*end i]                  
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            

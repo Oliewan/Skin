@@ -1,0 +1,2235 @@
+!dm $qqi(2),
+![*do a=1:15]
+!if ($q3/[a]+$q4/[a]).$q5/n[a],m $qqi/1,
+![*end a]
+!
+![*data qqiR(;)=
+!1;TOMA/UBA有选，但ABA没选;
+!]
+!
+![*set Q='qqi']
+!dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+!      r,f,
+!v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+!                      [[Q]R.i*2] [*sle]**
+!                 [*end i]
+!**Missing<z><q>
+!**Summary<c>', 
+[*data WR(;)=
+1;1;
+2;2;
+3;3;
+4;4;
+5;5;
+6;6;
+]
+
+[*set Q='W']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+**Missing<z><q>
+**Summary<c>', 
+
+[*data MR(;)=
+1;M1;
+2;M2;
+]
+
+[*set Q='M']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+**Missing<z><q>
+**Summary<c>', 
+
+[*data SLR(;)=
+1;Delete;
+2;Remain;
+]
+
+[*set Q='SL']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+**Missing<z><q>
+**Summary<c>', 
+
+[*data CORNOVR(;)=
+1;changed;
+0;no changed;
+]
+
+[*set Q='CORNOV']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+**Missing<z><q>
+**Summary<c>', 
+
+[*data oriR(;)=
+1;x;
+2;a;
+3;l;
+]
+
+[*set Q='ori']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+**Missing<z><q>
+**Summary<c>', 
+
+[*data PTR(;)=
+1;GDT;
+2;NRT;
+3;XY;
+
+]
+
+[*set Q='PT']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+**Missing<z><q>
+**Summary<c>', 
+
+[*data ctR(;)=
+1;Top 4;
+2;A;
+3;B;
+]
+
+[*set Q='ct']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+**Missing<z><q>
+**Summary<c>', 
+
+[*data cityR(;)=
+1;Beijing;
+2;Shanghai;
+3;Guangzhou;
+4;Chengdu;
+5;Others;
+
+]
+
+[*set Q='city']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+**Missing<z><q>
+**Summary<c>', 
+
+
+[*data regionR(;)=
+1;W;
+2;S;
+3;N;
+4;E; 
+
+
+]
+
+[*set Q='region']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+**Missing<z><q><S>
+**Summary<c>', 
+
+                                          
+[*data Q1R(;)=                
+1;18-24;
+2;25-34;
+3;35-44;
+4;45-55;                                     
+]                
+                
+[*set Q='Q1']                
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,                
+v  $t[Q]='[*do i=1:[[Q]R.#]/2]               
+                      [[Q]R.i*2] [*sle]**    
+                 [*end i]                
+**Missing<z>              
+**Summary<c>',   
+                            
+
+
+[*data Q2R(;)=    
+1;China1+;
+2;China1;
+3;China2;
+2+3;China1&2;
+4;China3;                                                   
+]                
+                
+[*set Q='Q2']                
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,                
+v  $t[Q]='[*do i=1:[[Q]R.#]/2]               
+                      [[Q]R.i*2] [*sle]**    
+                 [*end i]                
+**Missing<z>               
+**Summary<c>',  
+
+
+
+              
+[*data Q3R(;)=
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+7;Pechoin;
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+11;Lancome;
+12;Loreal;
+13;Olay;
+14;SK-ll;
+15;Vichy;
+16;Wetcode;
+17;Hanhoo;
+18;Oneleaf;
+19;OSM;
+20;Whoo;
+21;Meifubao;
+22;Wetherm;
+24;Onespring;
+25;Chnskin;
+26;Marubi;
+27;8cupswater;
+29;The Face Shop;
+30;Sulwhasoo;
+32;Cogi;
+33;Yuesai;
+35;Avon;
+36;perfect;
+39;Jurlique;
+40;Dior;
+41;Obeis;
+42;Afu;
+43;ZA;
+44;PURE&MILD;
+45;Laroche Posay;
+46;Mamonde;
+48;Freeplus;
+49;Limi;
+50;Watsons;
+51;Ribecs;
+52;ZMC;
+53;Mary Kay;
+54;Avene;
+56;gN Pearl;
+57;Laneige;
+58;Shiseido;
+60;DR Plant;
+61;BeautyUS;
+62;AHC;
+64;DHC;
+67;Armani;
+70;A‘Gensn;
+71;Amway;
+74;Biotherm;
+76;City doctor;
+77;Chunji;
+79;Kanga;
+81;Pedicle;
+82;Tjoy;
+83;Tayol;
+85;Franic;
+87;Fawa;
+89;Fragrance;
+90;GF;
+94;La Mer;
+101;Givenchy;
+103;Guerlain;
+104;Clarins;
+105;Jinquan;
+107;Carslan;
+109;Kiehl’s;
+110;Clean&Clear;
+111;Chlitina;
+112;Long Rich;
+115;MaskFamil;
+116;Nivea;
+119;Proya;
+120;Rinawale;
+122;Softto;
+125;Chanel;
+127;Yumeijing;
+129;It’s skin;
+131;Neutrogena;
+132;TST;
+134;Uzero;
+135;Maybelline;
+136;Maxam;
+138;Gialen;
+139;Saselomo;
+140;YSL;
+145;NewLife;
+151;Mentholatum;
+156;L‘OCCITANE;
+157;Watercome;
+160;Revlon;
+161;Hanajirushi;
+163;sum37°;
+165;zuzu;
+168;Doctor Li;
+170;Ponds;
+171;Mom face;
+172;Syrinx;
+173;Artistry;
+
+999;Others; 
+]
+
+[*set Q='Q3']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+**Missing<z>           
+**Summary<c>',            
+                                                                                 
+ [*data Q4R(;)=
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+7;Pechoin;
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+11;Lancome;
+12;Loreal;
+13;Olay;
+14;SK-ll;
+15;Vichy;
+16;Wetcode;
+17;Hanhoo;
+18;Oneleaf;
+19;OSM;
+20;Whoo;
+21;Meifubao;
+22;Wetherm;
+24;Onespring;
+25;Chnskin;
+26;Marubi;
+27;8cupswater;
+29;The Face Shop;
+30;Sulwhasoo;
+32;Cogi;
+33;Yuesai;
+35;Avon;
+36;perfect;
+39;Jurlique;
+40;Dior;
+41;Obeis;
+42;Afu;
+43;ZA;
+44;PURE&MILD;
+45;Laroche Posay;
+46;Mamonde;
+48;Freeplus;
+49;Limi;
+50;Watsons;
+51;Ribecs;
+52;ZMC;
+53;Mary Kay;
+54;Avene;
+56;gN Pearl;
+57;Laneige;
+58;Shiseido;
+60;DR Plant;
+61;BeautyUS;
+62;AHC;
+64;DHC;
+67;Armani;
+70;A‘Gensn;
+71;Amway;
+74;Biotherm;
+76;City doctor;
+77;Chunji;
+79;Kanga;
+81;Pedicle;
+82;Tjoy;
+83;Tayol;
+85;Franic;
+87;Fawa;
+89;Fragrance;
+90;GF;
+94;La Mer;
+101;Givenchy;
+103;Guerlain;
+104;Clarins;
+105;Jinquan;
+107;Carslan;
+109;Kiehl’s;
+110;Clean&Clear;
+111;Chlitina;
+112;Long Rich;
+115;MaskFamil;
+116;Nivea;
+119;Proya;
+120;Rinawale;
+122;Softto;
+125;Chanel;
+127;Yumeijing;
+129;It’s skin;
+131;Neutrogena;
+132;TST;
+134;Uzero;
+135;Maybelline;
+136;Maxam;
+138;Gialen;
+139;Saselomo;
+140;YSL;
+145;NewLife;
+151;Mentholatum;
+156;L‘OCCITANE;
+157;Watercome;
+160;Revlon;
+161;Hanajirushi;
+163;sum37°;
+165;zuzu;
+168;Doctor Li;
+170;Ponds;
+171;Mom face;
+172;Syrinx;
+173;Artistry;
+
+
+999;Others;                    
+
+
+
+]
+
+[*set Q='Q4']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+**Missing<z>             
+**Summary<c>',           
+
+
+
+
+
+              
+ [*data Q5R(;)=
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+7;Pechoin;
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+11;Lancome;
+12;Loreal;
+13;Olay;
+14;SK-ll;
+15;Vichy;
+
+
+999;Others;
+]
+
+[*set Q='Q5']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+**Missing<z><s>
+**Summary<c>',      
+
+[*data Q5bR(;)=
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+7;Pechoin;
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+11;Lancome;
+12;Loreal;
+13;Olay;
+14;SK-ll;
+15;Vichy;
+
+199+999;Others;
+
+]
+
+[*set Q='Q5b']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+**Missing<z>            
+**Summary<c>',
+
+[*data Q6aR(;)=
+1;Olay Bride to be(110182);
+2;Olay Song Qian TVC(110178);
+3;Loreal Celebrity articles(Wu Yifan|Show|Loreal mine mud long-term oil control cleansing milk);
+4;Estee Lauder Makeup Liquid Foundation;
+5;Estee Lauder Celebrity articles(Yang Mi|Show|Pure translucent skin)  Nutritious Vitality Radiant Energy Lotion(110179);
+6;Lancome Genifique Yeux Light-Pearl (110180);
+7;Kans Hydrating Silky Essence Mask(110181);
+8;Aupres Base Care Essence II Golden Circulation (110172);
+9;Loreal Celebrity articles(Dilireba|Show) (110176);
+10;Lancome Advanced Genifique Sensitive-Show articles(Lady show)-15s;
+11;Loreal Revitalift Pure Centella Micro.essence Water-Celebrity articles(Gongli shows)-15s;
+12;Loreal Youth Code Pre.essent Eye Essence-Celebrity articles Dilireba-15s;
+13;Estee Lauder Advanced Night Repair-Show-15s;
+14;Olay Ruler_170522_GYY 15s_RC;
+15;Olay-Mom-2mins-Sep‘17;
+16;Olay_CELL SCIENCE_RG_15S_DIGITAL NATIONAL_HD;
+17;Olay Trueview--28 Day AA final--Tianmao conventional tagon;
+18;Estee Lauder Advanced Night Repair Eye Concentrate Matrix;   
+19;Olay He Sui 60s Magic AA vedio;
+20;Pechoin Sanshenghua 15s;
+21;Kans 1208VIP;
+22;Lancome Absolue precious cells revitalizing care-silky cream;
+23;Estee Lauder Revitalizing superme+ global anti-aging power soft creme;
+24;Magic AA;
+25;White_15s_universal(HDCAM)_2 ;         
+26;Olay_CL_Tmall_rev5_HD ;                
+27;Xiaohongpingjushuiguangjinghua20180206;
+28;Lancome xiaoheipinganpingjinghua180227;
+29;Lancome hufupin180130  ;               
+30;Sanshenghuahuaniangshui  ;             
+31;Loreal jixuecaoweijinghualu180102;     
+32;Estee Lauder xiaozongpingjinghua ;     
+
+
+
+
+998;都没有看过<z><s> ;
+]
+
+[*set Q='Q6a']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+**Missing<z>            
+**Summary<c>',
+              
+ 
+
+
+             
+[*data Q6R(;)=
+1;$Q6A/1;Olay Bride to be(110182);
+2;$Q6A/2;Olay Song Qian TVC(110178);
+3;$Q6A/3;Loreal Celebrity articles(Wu Yifan|Show|Loreal mine mud long-term oil control cleansing milk);
+4;$Q6A/4;Estee Lauder Makeup Liquid Foundation;
+5;$Q6A/5;Estee Lauder Celebrity articles(Yang Mi|Show|Pure translucent skin)  Nutritious Vitality Radiant Energy Lotion(110179);
+6;$Q6A/6;Lancome Genifique Yeux Light-Pearl (110180);
+7;$Q6A/7;Kans Hydrating Silky Essence Mask(110181);
+8;$Q6A/8;Aupres Base Care Essence II Golden Circulation (110172);
+9;$Q6A/9;Loreal Celebrity articles(Dilireba|Show) (110176);
+10;$Q6A/10;Lancome Advanced Genifique Sensitive-Show articles(Lady show)-15s;
+11;$Q6A/11;Loreal Revitalift Pure Centella Micro.essence Water-Celebrity articles(Gongli shows)-15s;
+12;$Q6A/12;Loreal Youth Code Pre.essent Eye Essence-Celebrity articles Dilireba-15s;
+13;$Q6A/13;Estee Lauder Advanced Night Repair-Show-15s;
+14;$Q6A/14;Olay Ruler_170522_GYY 15s_RC;
+15;$Q6A/15;Olay-Mom-2mins-Sep‘17;
+16;$Q6A/16;Olay_CELL SCIENCE_RG_15S_DIGITAL NATIONAL_HD;
+17;$Q6A/17;Olay Trueview--28 Day AA final--Tianmao conventional tagon;
+18;$Q6A/18;Estee Lauder Advanced Night Repair Eye Concentrate Matrix;   
+19;$Q6A/19;Olay He Sui 60s Magic AA vedio;
+20;$Q6A/20;Pechoin Sanshenghua 15s;
+21;$Q6A/21;Kans 1208VIP;
+22;$Q6A/22;Lancome Absolue precious cells revitalizing care-silky cream;
+23;$Q6A/23;Estee Lauder Revitalizing superme+ global anti-aging power soft creme;
+24;$Q6A/24;Magic AA;
+25;$Q6A/25;White_15s_universal(HDCAM)_2 ;         
+26;$Q6A/26;Olay_CL_Tmall_rev5_HD ;                
+27;$Q6A/27;Xiaohongpingjushuiguangjinghua20180206;
+28;$Q6A/28;Lancome xiaoheipinganpingjinghua180227;
+29;$Q6A/29;Lancome hufupin180130  ;               
+30;$Q6A/30;Sanshenghuahuaniangshui  ;             
+31;$Q6A/31;Loreal jixuecaoweijinghualu180102;     
+32;$Q6A/32;Estee Lauder xiaozongpingjinghua ;     
+
+
+
+
+998;t;都没有看过<z><s> ;
+]
+
+[*set Q='Q6']
+[*set x=[[Q]R.#]/3]     
+dm $t[Q]=[*do i=1:x][[Q]R.i*3-1], $[Q]/[[Q]R.i*3-2],[*end i]   
+      r,f,                                                     
+v  $t[Q]='[*do i=1:x]                                          
+                    [[Q]R.i*3]-Base<b>**[[q]r.i*3][*sle]**     
+                 [*end i]                                      
+              **Missing<z>                                     
+              **mmmmm<c><s>',                                  
+              
+
+[*data Q7b1R(;)=
+13;Correct Linkage;
+13;Olay;
+1..12+14..999;Other brands;
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+7;Pechoin;
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+11;Lancome;
+12;Loreal;
+14;SK-II;
+15;Vichy;
+
+16..999;Others; 
+]
+
+[*set Q='Q7b1']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>', 
+
+ [*data Q7b2R(;)=
+13;Correct Linkage;
+13;Olay;
+1..12+14..999;Other brands;
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+7;Pechoin;
+8;Innisfree;
+9;Inoherb;
+10;Kans;
+11;Lancome;
+12;Loreal;
+14;SK-II;
+15;Vichy;
+
+16..999;Others; 
+
+]
+
+[*set Q='Q7b2']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>', 
+
+
+
+
+ [*data Q7b3R(;)=
+ 12;Correct Linkage;
+12;Loreal;
+1..11+13..999;Other brands;
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+7;Pechoin;
+8;Innisfree;
+9;Inoherb;
+10;Kans;
+11;Lancome;
+13;Olay;
+14;SK-II;
+15;Vichy;
+16..999;Others;
+
+]
+
+[*set Q='Q7b3']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>', 
+
+
+ [*data Q7b4R(;)=
+6;Correct Linkage;
+6;Estee Lauder;
+1..5+7..999;Other brands;
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+7;Pechoin;
+8;Innisfree;
+9;Inoherb;
+10;Kans;
+11;Lancome;
+12;Loreal;
+13;Olay;
+14;SK-II;
+15;Vichy;
+16..999;Others;
+
+]
+
+[*set Q='Q7b4']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>', 
+
+ [*data Q7b5R(;)=
+6;Correct Linkage;
+6;Estee Lauder;
+1..5+7..999;Other brands;
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+7;Pechoin;
+8;Innisfree;
+9;Inoherb;
+10;Kans;
+11;Lancome;
+12;Loreal;
+13;Olay;
+14;SK-II;
+15;Vichy;
+16..999;Others;
+
+]
+
+[*set Q='Q7b5']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>', 
+
+
+ [*data Q7b6R(;)=
+11;Correct Linkage;
+11;Lancome;
+
+1..10+12..999;Other brands;
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+7;Pechoin;
+8;Innisfree;
+9;Inoherb;
+10;Kans;
+12;Loreal;
+13;Olay;
+14;SK-II;
+15;Vichy;
+16..999;Others;
+
+]
+
+[*set Q='Q7b6']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>', 
+              
+ [*data Q7b7R(;)=
+10;Correct Linkage;
+10;Kans;
+
+1..9+11..999;Other brands;
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+7;Pechoin;
+8;Innisfree;
+9;Inoherb;
+11;Lancome;
+12;Loreal;
+13;Olay;
+14;SK-II;
+15;Vichy;
+16..999;Others;
+
+]
+
+[*set Q='Q7b7']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>', 
+              
+ [*data Q7b8R(;)=
+1;Correct Linkage;
+1;Aupres;
+2..999;Other brands;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+7;Pechoin;
+8;Innisfree;
+9;Inoherb;
+10;Kans;
+11;Lancome;
+12;Loreal;
+13;Olay;
+14;SK-II;
+15;Vichy;
+16..999;Others;
+
+]
+
+[*set Q='Q7b8']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>',               
+                           
+[*data Q7b9R(;)=
+12;Correct Linkage;
+12;Loreal;
+
+1..11+13..999;Other brands;
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+7;Pechoin;
+8;Innisfree;
+9;Inoherb;
+10;Kans;
+11;Lancome;
+
+13;Olay;
+14;SK-II;
+15;Vichy;
+16..999;Others; 
+
+]
+
+[*set Q='Q7b9']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c><s>', 
+
+
+
+!!!!10月品牌联想
+[*data Q7b10R(;)=
+11;Correct Linkage;
+11;Lancome;
+1..10+12..999;Other brands;
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+7;Pechoin;
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+
+12;Loreal;
+13;Olay;
+14;SK-ll;
+15;Vichy;
+16..999;Others;  
+]
+
+[*set Q='Q7b10']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>', 
+
+
+
+
+ [*data Q7b11R(;)=
+12;Correct Linkage;
+12;Loreal;
+1..11+13..999;Other brands;
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+7;Pechoin;
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+11;Lancome;
+
+13;Olay;
+14;SK-ll;
+15;Vichy;
+16..999;Others;
+
+]
+
+[*set Q='Q7b11']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>', 
+
+
+ [*data Q7b12R(;)=
+12;Correct Linkage;
+12;Loreal;
+1..11+13..999;Other brands;
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+7;Pechoin;
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+11;Lancome;
+
+13;Olay;
+14;SK-ll;
+15;Vichy;
+16..999;Others;
+
+]
+
+[*set Q='Q7b12']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>', 
+
+ [*data Q7b13R(;)=
+6;Correct Linkage;
+6;Estee Lauder;
+1..5+7..999;Other brands;
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+
+
+7;Pechoin;
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+11;Lancome;
+12;Loreal;
+13;Olay;
+14;SK-ll;
+15;Vichy;
+16..999;Others;
+
+]
+
+[*set Q='Q7b13']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>', 
+
+
+ [*data Q7b14R(;)=
+13;Correct Linkage;
+13;Olay;
+
+1..12+14..999;Other brands;
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+7;Pechoin;
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+11;Lancome;
+12;Loreal;
+
+14;SK-II;
+15;Vichy;
+16..999;Others;
+
+]
+
+[*set Q='Q7b14']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>', 
+              
+ [*data Q7b15R(;)=
+13;Correct Linkage;
+13;Olay;
+
+1..12+14..999;Other brands;
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+7;Pechoin;
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+11;Lancome;
+12;Loreal;
+
+14;SK-II;
+15;Vichy;
+16..999;Others;
+
+]
+
+[*set Q='Q7b15']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>', 
+              
+ [*data Q7b16R(;)=
+13;Correct Linkage;
+13;Olay;
+
+1..12+14..999;Other brands;
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+7;Pechoin;
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+11;Lancome;
+12;Loreal;
+
+14;SK-II;
+15;Vichy;
+16..999;Others;
+]
+
+[*set Q='Q7b16']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>',               
+
+
+ [*data Q7b17R(;)=
+13;Correct Linkage;
+13;Olay;
+
+1..12+14..999;Other brands;
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+7;Pechoin;
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+11;Lancome;
+12;Loreal;
+
+14;SK-II;
+15;Vichy;
+16..999;Others;
+
+]
+
+[*set Q='Q7b17']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>',
+
+
+ [*data Q7b18R(;)=
+6;Correct Linkage;
+6;Estee Lauder;
+1..5+7..999;Other brands;
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+
+
+7;Pechoin;
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+11;Lancome;
+12;Loreal;
+13;Olay;
+14;SK-ll;
+15;Vichy;
+16..999;Others;
+
+]
+
+[*set Q='Q7b18']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>',
+
+
+ [*data Q7b19R(;)=
+13;Correct Linkage;
+13;Olay;
+1..12+14..999;Other brands;
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+
+7;Pechoin;
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+11;Lancome;
+12;Loreal;
+
+14;SK-ll;
+15;Vichy;
+16..999;Others;
+]
+
+[*set Q='Q7b19']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>',
+
+
+ [*data Q7b20R(;)=
+7;Correct Linkage;
+7;Pechoin;
+1..6+8..999;Other brands;
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+
+
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+11;Lancome;
+12;Loreal;
+13;Olay;
+14;SK-ll;
+15;Vichy;
+16..999;Others;
+
+]
+
+[*set Q='Q7b20']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>',
+
+ [*data Q7b21R(;)=
+10;Correct Linkage;
+10;Kans;
+
+1..9+11..999;Other brands;
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+
+7;Pechoin;
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+11;Lancome;
+12;Loreal;
+13;Olay;
+14;SK-ll;
+15;Vichy;
+16..999;Others;
+]
+
+[*set Q='Q7b21']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>',
+
+ [*data Q7b22R(;)=
+11;Correct Linkage;
+11;Lancome;
+1..10+12..999;Other brands;
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+
+7;Pechoin;
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+
+12;Loreal;
+13;Olay;
+14;SK-ll;
+15;Vichy;
+16..999;Others;
+]
+
+[*set Q='Q7b22']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>',
+
+ [*data Q7b23R(;)=
+6;Correct Linkage;
+6;Estee Lauder;
+1..5+7..999;Other brands;
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+
+
+7;Pechoin;
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+11;Lancome;
+12;Loreal;
+13;Olay;
+14;SK-ll;
+15;Vichy;
+16..999;Others;
+]
+
+[*set Q='Q7b23']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>',
+
+[*data Q7b24R(;)=
+13;Correct Linkage;
+13;Olay;
+1..12+14..999;Other brands;
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+
+7;Pechoin;
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+11;Lancome;
+12;Loreal;
+
+14;SK-ll;
+15;Vichy;
+16..999;Others;
+]
+
+[*set Q='Q7b24']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>',
+             
+[*data Q7b25R(;)=
+13;Correct Linkage;
+13;Olay;
+1..12+14..999;Other brands;
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+
+7;Pechoin;
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+11;Lancome;
+12;Loreal;
+
+14;SK-ll;
+15;Vichy;
+16..999;Others;
+]
+
+[*set Q='Q7b25']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>',
+             
+[*data Q7b26R(;)=
+13;Correct Linkage;
+13;Olay;
+1..12+14..999;Other brands;
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+
+7;Pechoin;
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+11;Lancome;
+12;Loreal;
+
+14;SK-ll;
+15;Vichy;
+16..999;Others;
+]
+
+[*set Q='Q7b26']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>',
+             
+[*data Q7b27R(;)=
+10;Correct Linkage;
+10;Kans;
+1..9+11..999;Other brands;
+
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+7;Pechoin;
+8;Innisfree;
+9; Inoherb;
+
+11;Lancome;
+12;Loreal;
+13;Olay;
+14;SK-ll;
+15;Vichy;
+16..999;Others;
+]
+
+[*set Q='Q7b27']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>',
+             
+[*data Q7b28R(;)=
+11;Correct Linkage;
+11;Lancome;
+1..10+12..999;Other brands;
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+
+7;Pechoin;
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+
+12;Loreal;
+13;Olay;
+14;SK-ll;
+15;Vichy;
+16..999;Others;
+]
+
+[*set Q='Q7b28']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>',
+             
+[*data Q7b29R(;)=
+11;Correct Linkage;
+11;Lancome;
+1..10+12..999;Other brands;
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+
+7;Pechoin;
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+
+12;Loreal;
+13;Olay;
+14;SK-ll;
+15;Vichy;
+16..999;Others;
+]
+
+[*set Q='Q7b29']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>',
+             
+[*data Q7b30R(;)=
+7;Correct Linkage;
+7;Pechoin;
+1..6+8..999;Other brands;
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+
+
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+11;Lancome;
+12;Loreal;
+13;Olay;
+14;SK-ll;
+15;Vichy;
+16..999;Others;
+]
+
+[*set Q='Q7b30']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>',
+             
+[*data Q7b31R(;)=
+12;Correct Linkage;
+12;Loreal;
+1..11+13..999;Other brands;
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+
+7;Pechoin;
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+11;Lancome;
+
+13;Olay;
+14;SK-ll;
+15;Vichy;
+16..999;Others;
+]
+
+[*set Q='Q7b31']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>',
+             
+[*data Q7b32R(;)=
+6;Correct Linkage;
+6;Estee Lauder;
+1..5+7..999;Other brands;
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+
+
+7;Pechoin;
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+11;Lancome;
+12;Loreal;
+13;Olay;
+14;SK-ll;
+15;Vichy;
+16..999;Others;
+]
+
+[*set Q='Q7b32']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>',
+             
+              
+!!!八月              
+[*do a=1:32]
+ [*data Q80[a]R(;)=
+1;TV;
+2;Social network;
+3;Vedio;
+4;Instore;
+5;Lift ads;
+6;Website(Search engine/BBS/Portal site);
+7;Ecom;
+8;Outdoor ads(Bus station/railway etc.);
+996;no answer<Z><s>;
+]
+
+[*set Q='Q80[a]']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>', 
+[*end a]              
+
+
+ 
+              
+!!!0407出summary用，把missing值显示出来
+[*do a=1:15]
+[*data TQ90[a]R(;)=
+1;This brand gives me radiant, glowing skin<s>;
+2;This brand leaves skin softer, smoother<s>;
+3;This brand is worth paying more for<s>;
+4;Effectively reduces the multiple signs of aging<s>;
+5;Effectively whitens facial skin<s>;
+6;Is upscale<s>;
+7;Dramatically transform my skin<s>;
+8;Motivates me to keep striving to be my best<s>;
+9;The first one to introduce the latest products and ingredients<s>;
+10;Helps me look younger for my age<s>;
+11;Has packages that delight me<s>;
+12;Has products you can feel working the moment you use them<s>;
+13;Is more effective than other brands<s>;
+
+998;None of them above<s>;
+]
+
+[*set Q='TQ90[a]']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary1<c>',   
+[*end a]  
+
+
+
+!!!!!!!!Rebase             
+[*insert ..\ddm\MS-wt.stp]
+
+ 
+
+
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+IF $W/6.$Q10/1,DI $Q10ad=1, 
+IF $W/6.$Q10/2,DI $Q10ad=4, 
+IF $W/6.$Q10/3,DI $Q10ad=2, 
+IF $W/6.$Q10/4,DI $Q10ad=5, 
+IF $W/6.$Q10/5,DI $Q10ad=6, 
+IF $W/6.$Q10/6,DI $Q10ad=9, 
+IF $W/6.$Q10/7,DI $Q10ad=10,
+IF $W/6.$Q10/8,DI $Q10ad=11,
+IF $W/6.$Q10/9,DI $Q10ad=12,    
+
+     
+
+
+[*data Q10adR(;)=
+1;Hyper/Super; 
+4;PCS-Personal care store;
+2;Mini-market;
+5;Cosmetic store;
+6;Ecom;
+9;Department store;
+10;Direct selling;
+11;Wechat Business;                 
+12;Sea Amoy and overseas purchasing;
+
+3;Convenience store;
+7;Grocery;
+8;Terminal market;
+
+
+
+
+
+996;no answer<Z>;
+]
+
+[*set Q='Q10ad']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>', 
+
+
+
+
+
+
+
+
+[*data Q10bdR(;)=
+
+1;Hyper/Super;
+2;Mini-market;
+3;PCS-Personal care store;
+4;Cosmetic store;
+5;Ecom;
+6;Grocery store;
+
+]
+
+[*set Q='Q10bd']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>', 
+
+
+
+
+
+    
+  
+[*data Q11R(;)=
+1;Yes;
+2;No;
+
+]
+
+[*set Q='Q11']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+**Missing<z><q>
+**Summary<c>', 
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+!!!!M1
+[*data RQ6R(;)=
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+7;Pechoin;
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+11;Lancome;
+12;Loreal;
+13;Olay;
+14;SK-ll;
+15;Vichy;
+
+999;Others;
+
+]
+
+[*set Q='RQ6']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+**Missing<z>              
+**Summary<c>', 
+
+
+[*data RsQ6R(;)=
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+7;Pechoin;
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+11;Lancome;
+12;Loreal;
+13;Olay;
+14;SK-ll;
+15;Vichy;
+
+999;Others;
+
+]
+
+[*set Q='RsQ6']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+**Missing<z>              
+**Summary<c>', 
+
+
+             
+[*DO A=1:15]              
+[*data RQ70[a]R(;)=
+10;10(很完美)<V10>;
+9 ;9<V9>;
+8 ;8<V8>;
+7 ;7<V7>;
+6 ;6<V6>;
+5 ;5<V5>;
+4 ;4<V4>;
+3 ;3<V3>;
+2 ;2<V2>;
+1 ;1 (很糟糕)<V1>; 
+]
+
+[*set Q='RQ70[a]']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+              **Missing<z><S>
+              **mmmmm<c><s>',       
+[*END A] 
+
+di $Rq7,
+[*data RQ7R(;)=
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+7;Pechoin;
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+11;Lancome;
+12;Loreal;
+13;Olay;
+14;SK-ll;
+15;Vichy;
+]
+[*set Q='RQ7']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+              **Missing<z>
+              **mmmmm<c>',
+
+
+
+[*data RQ8R(;)=
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+7;Pechoin;
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+11;Lancome;
+12;Loreal;
+13;Olay;
+14;SK-ll;
+15;Vichy;
+
+999;Others;
+998;None of the above;
+
+]
+
+[*set Q='RQ8']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+**Missing<z>              
+**Summary<c>', 
+
+[*do a=1:15]
+[*data RQ90[a]R(;)=
+1;TV;
+2;Social network;
+3;Vedio;
+4;Instore;
+5;Lift ads;
+6;Website(Search engine/BBS/Portal site);
+7;Ecom;
+8;Outdoor ads(Bus station/railway etc.);
+
+
+]
+
+[*set Q='RQ90[a]']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+**Missing<z>              
+**Summary<c>',     
+[*end a]
+
+[*data rQ12R(;)=
+1;Olay大红瓶 / Olay新生塑颜金纯面霜;
+2;Olay光感小白瓶 / Olay 水感透白净瑕精华露;
+3;ProX淡斑小白瓶 / Pro-x 亮洁晳颜祛斑精华液;
+4;Prox苹果肌精华 / Pro-x 肌源活颜舒纹精华乳;
+5;Olay小脸精华 / Olay新生塑颜臻粹修护精华露;
+6;Olay紧致小白瓶 / Olay水感透白臻粹修护精华露;
+7;玉兰油多效修护霜;
+998;以上都没看过或听过;
+
+
+]
+
+[*set Q='rQ12']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>', 
+
+
+[*data rQ13R(;)=
+1;Olay大红瓶 / Olay新生塑颜金纯面霜;
+2;Olay光感小白瓶 / Olay 水感透白净瑕精华露;
+3;ProX淡斑小白瓶 / Pro-x 亮洁晳颜祛斑精华液;
+4;Prox苹果肌精华 / Pro-x 肌源活颜舒纹精华乳;
+5;Olay小脸精华 / Olay新生塑颜臻粹修护精华露;
+6;Olay紧致小白瓶 / Olay水感透白臻粹修护精华露;
+7;玉兰油多效修护霜;
+998;以上都没买过;
+
+
+]
+
+[*set Q='rQ13']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>', 
+
+
+[*data rQ14R(;)=
+1;Olay大红瓶 / Olay新生塑颜金纯面霜;
+2;Olay光感小白瓶 / Olay 水感透白净瑕精华露;
+3;ProX淡斑小白瓶 / Pro-x 亮洁晳颜祛斑精华液;
+4;Prox苹果肌精华 / Pro-x 肌源活颜舒纹精华乳;
+5;Olay小脸精华 / Olay新生塑颜臻粹修护精华露;
+6;Olay紧致小白瓶 / Olay水感透白臻粹修护精华露;
+7;玉兰油多效修护霜;
+8;不确定是否会购买;
+
+]
+
+[*set Q='rQ14']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>', 
+
+
+
+
+!!!0111统计attribute选择所有品牌的人              
+
+[*do a=1:13]
+dm $tt90[a](999),
+[*end a]
+
+
+
+[*DO A=1:15]
+[*DO B=1:13]
+IF $Q9A0[B]/[A],m $TT90[B]/[A+((B-1)*15)],
+[*END B]
+[*END A]
+
+
+
+
+
+
+
+[*DO a=1:13]
+        om $TT9=$TT90[A]/1-999,
+[*end a] 
+
+DM $CABA(99),
+IF CT($Q5)/1 ,M $CABA/1 ,   
+IF CT($Q5)/2 ,M $CABA/2 ,                
+IF CT($Q5)/3 ,M $CABA/3 , 
+IF CT($Q5)/4 ,M $CABA/4 , 
+IF CT($Q5)/5 ,M $CABA/5 , 
+IF CT($Q5)/6 ,M $CABA/6 , 
+IF CT($Q5)/7 ,M $CABA/7 , 
+IF CT($Q5)/8 ,M $CABA/8 , 
+IF CT($Q5)/9 ,M $CABA/9 , 
+IF CT($Q5)/10,M $CABA/10, 
+IF CT($Q5)/11,M $CABA/11, 
+IF CT($Q5)/12,M $CABA/12, 
+IF CT($Q5)/13,M $CABA/13, 
+IF CT($Q5)/14,M $CABA/14, 
+IF CT($Q5)/15,M $CABA/15, 
+
+
+
+DM $CEA(99),
+IF CT($TT9)/13 ,M $CEA/1 ,   
+IF CT($TT9)/26 ,M $CEA/2 ,                
+IF CT($TT9)/39 ,M $CEA/3 , 
+IF CT($TT9)/52 ,M $CEA/4 , 
+IF CT($TT9)/65 ,M $CEA/5 , 
+IF CT($TT9)/78 ,M $CEA/6 , 
+IF CT($TT9)/91 ,M $CEA/7 , 
+IF CT($TT9)/104,M $CEA/8 , 
+IF CT($TT9)/117,M $CEA/9 , 
+IF CT($TT9)/130,M $CEA/10, 
+IF CT($TT9)/143,M $CEA/11, 
+IF CT($TT9)/156,M $CEA/12, 
+IF CT($TT9)/169,M $CEA/13, 
+IF CT($TT9)/182,M $CEA/14, 
+IF CT($TT9)/195,M $CEA/15, 
+
+
+
+DM $TBD(99),
+IF $CABA/1 .$CEA/1 ,M $TBD/1 , 
+IF $CABA/2 .$CEA/2 ,M $TBD/2 , 
+IF $CABA/3 .$CEA/3 ,M $TBD/3 , 
+IF $CABA/4 .$CEA/4 ,M $TBD/4 , 
+IF $CABA/5 .$CEA/5 ,M $TBD/5 ,       
+IF $CABA/6 .$CEA/6 ,M $TBD/6 ,                                                          
+IF $CABA/7 .$CEA/7 ,M $TBD/7 ,  
+IF $CABA/8 .$CEA/8 ,M $TBD/8 ,  
+IF $CABA/9 .$CEA/9 ,M $TBD/9 ,  
+IF $CABA/10.$CEA/10,M $TBD/10,  
+IF $CABA/11.$CEA/11,M $TBD/11,  
+IF $CABA/12.$CEA/12,M $TBD/12,  
+IF $CABA/13.$CEA/13,M $TBD/13,  
+IF $CABA/14.$CEA/14,M $TBD/14,  
+IF $CABA/15.$CEA/15,M $TBD/15,    
+
+
+
+
+
+[*data TBDR(;)=
+
+1 ;所有句子-ABA选择1 个品牌;
+2 ;所有句子-ABA选择2 个品牌;
+3 ;所有句子-ABA选择3 个品牌;
+4 ;所有句子-ABA选择4 个品牌;
+5 ;所有句子-ABA选择5 个品牌;
+6 ;所有句子-ABA选择6 个品牌;
+7 ;所有句子-ABA选择7 个品牌;
+8 ;所有句子-ABA选择8 个品牌;
+9 ;所有句子-ABA选择9 个品牌;
+10;所有句子-ABA选择10个品牌;
+11;所有句子-ABA选择11个品牌;
+12;所有句子-ABA选择12个品牌;
+13;所有句子-ABA选择13个品牌;
+14;所有句子-ABA选择14个品牌;
+15;所有句子-ABA选择15个品牌;
+
+]
+
+
+
+[*set Q='TBD']
+
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+
+      r,f,
+
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+
+                      [[Q]R.i*2] [*sle]**
+
+                 [*end i]
+
+**Missing<z><q><s>
+
+**Summary<c>', 
+
+
+
+[*do a=1:15]        
+   dm $ceqa[a](99),
+[*end a] 
+
+
+[*do a=1:15]
+[*do b=1:13]
+if ct($tq90[a])/[b],m $ceqa[a]/[b],
+[*end b]
+[*end a]
+
+
+[*do a=1:15]
+[*data ceqa[a]R(;)=
+1 ;1 <v1 >;
+2 ;2 <v2 >;
+3 ;3 <v3 >;
+4 ;4 <v4 >;
+5 ;5 <v5 >;
+6 ;6 <v6 >;
+7 ;7 <v7 >;
+8 ;8 <v8 >;
+9 ;9 <v9 >;
+10;10<v10>;
+11;11<v11>;
+12;11<v12>;
+13;11<v13>;
+
+]
+
+[*set Q='ceqa[a]']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+              **Missing<z>
+              **mmmmm<c><s>',
+[*end a]     

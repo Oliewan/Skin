@@ -1,0 +1,801 @@
+[*data PtR(;)=
+1;GDT;
+2;NRT;
+]
+
+[*set Q='Pt']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+**Missing<z><q>
+**Summary<c>', 
+
+[*data ctR(;)=
+1;Top 4;
+2;A;
+3;B;
+]
+
+[*set Q='ct']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+**Missing<z><q>
+**Summary<c>', 
+
+
+[*data regionR(;)=
+1;W;
+2;S;
+3;N;
+4;E; 
+
+
+]
+
+[*set Q='region']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+**Missing<z><q><S>
+**Summary<c>', 
+                                           
+[*data Q1R(;)=                
+1;18-24;
+2;25-34;
+3;35-44;
+4;45-55;                                     
+]                
+                
+[*set Q='Q1']                
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,                
+v  $t[Q]='[*do i=1:[[Q]R.#]/2]               
+                      [[Q]R.i*2] [*sle]**    
+                 [*end i]                
+**Missing<z>              
+**Summary<c>',   
+                            
+
+
+[*data Q2R(;)=    
+1;China1+;
+2;China1;
+3;China2;
+4;China3;                                                   
+]                
+                
+[*set Q='Q2']                
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,                
+v  $t[Q]='[*do i=1:[[Q]R.#]/2]               
+                      [[Q]R.i*2] [*sle]**    
+                 [*end i]                
+**Missing<z>               
+**Summary<c>',  
+
+
+[*DO A=1:23]
+IF $Q7B[A]/(23+28+31+34+37+38+47+59+63+65+66+68+69+72+73+75+80+84+86+88+91+92+93+95+96+97+100+102+106+113+114+117+121+126+128+130+133+137+141+142+143+144+146+147+148+150+152+153+154+155+158+159+162+164+166+167+169),
+DI $Q7B[A]=999,   
+[*END A]               
+[*data Q3R(;)=
+13;Olay;
+12;Loreal;
+6;Estee Lauder;
+7;Pechoin;
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+11;Lancome;
+14;SK-ll;
+15;Vichy;
+
+]
+
+[*set Q='Q3']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+**Missing<z><S>           
+**Summary<c>',            
+                                                                                 
+ [*data Q4R(;)=
+13;Olay;
+12;Loreal;
+6;Estee Lauder;
+7;Pechoin;
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+11;Lancome;
+14;SK-ll;
+15;Vichy;
+                  
+
+
+
+]
+
+[*set Q='Q4']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+**Missing<z><s>             
+**Summary<c>',           
+
+
+
+
+              
+              
+ [*data Q5R(;)=
+13;Olay;
+12;Loreal;
+6;Estee Lauder;
+7;Pechoin;
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+11;Lancome;
+14;SK-ll;
+15;Vichy;
+
+
+]
+
+[*set Q='Q5']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+**Missing<z>           
+**Summary<c>',      
+
+[*data Q5bR(;)=
+13;Olay;
+12;Loreal;
+6;Estee Lauder;
+7;Pechoin;
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+11;Lancome;
+14;SK-ll;
+15;Vichy;
+
+
+
+]
+
+[*set Q='Q5b']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+**Missing<z><s>              
+**Summary<c>',
+
+              
+ 
+
+
+             
+                                
+              
+DM $QQ6(999),
+[*DO A=1:32]
+IF $Q6A/[A],M $QQ6/[A*4-3],
+IF $Q6/[A],M $QQ6/[A*4-2], 
+IF $Q6/[A],M $QQ6/[A*4-1],
+[*END A]
+!!!Correct Linkage
+IF $Q7B1 /13,M $QQ6/4 ,
+IF $Q7B2 /13,M $QQ6/8 ,
+IF $Q7B3 /12,M $QQ6/12,
+IF $Q7B4 /6 ,M $QQ6/16,
+IF $Q7B5 /6 ,M $QQ6/20,
+IF $Q7B6 /11,M $QQ6/24,
+IF $Q7B7 /10,M $QQ6/28,
+IF $Q7B8 /1 ,M $QQ6/32,
+IF $Q7B9 /12,M $QQ6/36,
+IF $Q7B10/11,M $QQ6/40,
+IF $Q7B11/12,M $QQ6/44,
+IF $Q7B12/12,M $QQ6/48,
+IF $Q7B13/6 ,M $QQ6/52,
+IF $Q7B14/13,M $QQ6/56,
+IF $Q7B15/13,M $QQ6/60,
+IF $Q7B16/13,M $QQ6/64,
+IF $Q7B17/13,M $QQ6/68,
+IF $Q7B18/6 ,M $QQ6/72,
+IF $Q7B19/13,M $QQ6/76,
+IF $Q7B20/7 ,M $QQ6/80,
+IF $Q7B21/10,M $QQ6/84,
+IF $Q7B22/11,M $QQ6/88,
+IF $Q7B23/6 ,M $QQ6/92,
+IF $Q7B24/13 ,M $QQ6/96,
+
+IF $Q7B25/13,M $QQ6/100,
+IF $Q7B26/13,M $QQ6/104,
+IF $Q7B27/10,M $QQ6/108,
+IF $Q7B28/11,M $QQ6/112,
+IF $Q7B29/11,M $QQ6/116,
+IF $Q7B30/7 ,M $QQ6/120,
+IF $Q7B31/12,M $QQ6/124,
+IF $Q7B32/6 ,M $QQ6/128,
+
+
+
+
+
+
+[*data QQ6R(;)=
+5;宋茜TVC （110178）<B>;
+6;Copy Aware;
+7; Aware Copy Base Size:<B>;
+8;Brand Linkage(Among aware);
+1;Olay Bride to be（110182）<B>;
+2;Copy Aware;
+3; Aware Copy Base Size:<B>;
+4;Brand Linkage(Among aware);
+53;Olay Ruler_170522_GYY 15s_RC<B>;
+54;Copy Aware;
+55; Aware Copy Base Size:<B>;
+56;Brand Linkage(Among aware);
+57;Olay-Mom-2mins-Sep‘17<B>;
+58;Copy Aware;
+59; Aware Copy Base Size:<B>;
+60;Brand Linkage(Among aware);
+61;Olay_CELL SCIENCE_RG_15S_DIGITAL NATIONAL_HD<B>;
+62;Copy Aware;
+63; Aware Copy Base Size:<B>;
+64;Brand Linkage(Among aware);
+65;Trueview--28 Day AA final--天猫常规tagon<B>;
+66;Copy Aware;
+67; Aware Copy Base Size:<B>;
+68;Brand Linkage(Among aware);
+73;He Sui 60s Magic AA vedio<B>;
+74;Copy Aware;
+75; Aware Copy Base Size:<B>;
+76;Brand Linkage(Among aware);
+93;Magic AA<B>;
+94;Copy Aware;
+95; Aware Copy Base Size:<B>;
+96;Brand Linkage(Among aware);
+97;White_15s_universal(HDCAM)_2<B>;
+98;Copy Aware;
+99; Aware Copy Base Size:<B>;
+100;Brand Linkage(Among aware);
+101;Olay_CL_Tmall_rev5_HD<B>;
+102;Copy Aware;
+103; Aware Copy Base Size:<B>;
+104;Brand Linkage(Among aware);
+
+      
+
+
+
+
+
+
+9;Loreal欧莱雅名人篇（吴亦凡|展示|欧莱雅矿漠泥长效控油洁面乳）（110183） <B>;
+10;Copy Aware;
+11; Aware Copy Base Size:<B>;
+12;Brand Linkage(Among aware);
+33;Loreal欧莱雅名人篇(迪丽热巴|展示|看得到的膨膨水摸得到) (110176)<B>;
+34;Copy Aware;
+35; Aware Copy Base Size:<B>;
+36;Brand Linkage(Among aware);
+41;欧莱雅复颜积雪草微精华-露名人篇(巩俐展示)-15s<B>;
+42;Copy Aware;
+43; Aware Copy Base Size:<B>;
+44;Brand Linkage(Among aware);
+45;欧莱雅青春密码酵素眼部精华肌底液-名人篇迪丽热巴-15s<B>;
+46;Copy Aware;
+47; Aware Copy Base Size:<B>;
+48;Brand Linkage(Among aware);
+121;Loreal jixuecaoweijinghualu180102<B>;
+122;Copy Aware;
+123; Aware Copy Base Size:<B>;
+124;Brand Linkage(Among aware);
+
+
+
+13;Estee Lauder雅诗兰黛持妆粉底液（110184）<B>;
+14;Copy Aware;
+15; Aware Copy Base Size:<B>;
+16;Brand Linkage(Among aware);
+17;Estee Lauder名人篇（杨幂|展示|肌肤纯透亮） Nutritious Vitality Radiant Energy Lotion（110179）<B>;
+18;Copy Aware;
+19; Aware Copy Base Size:<B>;
+20;Brand Linkage(Among aware);
+49;雅诗兰黛肌底微&小棕瓶精华-展示篇-15s<B>;
+50;Copy Aware;
+51; Aware Copy Base Size:<B>;
+52;Brand Linkage(Among aware);
+69;雅诗兰黛ADVANCED NIGHT REPAIR亮眼精萃<B>;
+70;Copy Aware;
+71; Aware Copy Base Size:<B>;
+72;Brand Linkage(Among aware);
+89;雅诗兰黛 护肤品<B>;
+90;Copy Aware;
+91; Aware Copy Base Size:<B>;
+92;Brand Linkage(Among aware);
+125;Estee Lauder xiaozongpingjinghua<B>;
+126;Copy Aware;
+127; Aware Copy Base Size:<B>;
+128;Brand Linkage(Among aware);
+
+
+
+21;Lancome 兰蔻小黑瓶大眼精华Genifique Yeux Light-Pearl （110180）<B>;
+22;Copy Aware;
+23; Aware Copy Base Size:<B>;
+24;Brand Linkage(Among aware);
+37;兰蔻GENIFIQUE小黑瓶安瓶精华-展示篇(女士展示)-15s<B>;
+38;Copy Aware;
+39; Aware Copy Base Size:<B>;
+40;Brand Linkage(Among aware);
+85;兰蔻菁纯玫愈颜霜 法国兰蔻<B>;
+86;Copy Aware;
+87; Aware Copy Base Size:<B>;
+88;Brand Linkage(Among aware);
+
+109;Lancome xiaoheipinganpingjinghua180227<B>;
+110;Copy Aware;
+111; Aware Copy Base Size:<B>;
+112;Brand Linkage(Among aware);
+113;Lancome hufupin180130<B>;
+114;Copy Aware;
+115; Aware Copy Base Size:<B>;
+116;Brand Linkage(Among aware);
+
+
+
+
+
+25;Kans 韩束黑面膜Hydrating Silky Essence Mas（110181）<B>;
+26;Copy Aware;
+27; Aware Copy Base Size:<B>;
+28;Brand Linkage(Among aware);
+81;1208 正品韩束尽在唯品会<B>;
+82;Copy Aware;
+83; Aware Copy Base Size:<B>;
+84;Brand Linkage(Among aware);
+105;Xiaohongpingjushuiguangjinghua20180206<B>;
+106;Copy Aware;
+107; Aware Copy Base Size:<B>;
+108;Brand Linkage(Among aware);
+
+
+29;Aupres Base Care Essence II Golden Circulation （110172）<B>;
+30;Copy Aware;
+31; Aware Copy Base Size:<B>;
+32;Brand Linkage(Among aware);
+
+
+77;百雀羚三生花系列 15s <B>;
+78;Copy Aware;
+79; Aware Copy Base Size:<B>;
+80;Brand Linkage(Among aware);
+117;Sanshenghuahuaniangshui<B>;
+118;Copy Aware;
+119; Aware Copy Base Size:<B>;
+120;Brand Linkage(Among aware);
+
+
+
+
+
+
+]
+
+[*set Q='QQ6']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>',                
+                           
+
+
+              
+!!!八月              
+[*do a=1:23]
+ [*data Q80[a]R(;)=
+1;TV;
+2;Social network;
+3;Vedio;
+4;Instore;
+5;Lift ads;
+6;Website(Search engine/BBS/Portal site);
+7;Ecom;
+8;Outdoor ads(Bus station/railway etc.);
+996;no answer<Z>;
+]
+
+[*set Q='Q80[a]']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>', 
+[*end a]              
+
+
+ 
+              
+              
+
+[*do a=1:15]
+[*data TQ90[a]R(;)=
+1;This brand gives me radiant, glowing skin;
+4;Effectively reduces the multiple signs of aging;
+5;Effectively whitens facial skin;
+2;This brand leaves skin softer, smoother;
+3;This brand is worth paying more for;
+
+6;Is upscale;
+7;Dramatically transform my skin;
+8;Motivates me to keep striving to be my best;
+9;The first one to introduce the latest products and ingredients;
+10;Helps me look younger for my age;
+11;Has packages that delight me;
+12;Has products you can feel working the moment you use them;
+13;Is more effective than other brands;
+
+998;None of them above<s><q>;
+]
+
+[*set Q='TQ90[a]']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z><s>
+**Summary<c>',   
+[*end a]  
+
+
+!!!!!!!!Rebase             
+[*insert ..\ddm\MS-wt.stp]
+
+ 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+IF $W/4.$Q10/1,DI $Q10ad=1,
+IF $W/4.$Q10/2,DI $Q10ad=4,
+IF $W/4.$Q10/3,DI $Q10ad=2,
+IF $W/4.$Q10/4,DI $Q10ad=5,
+IF $W/4.$Q10/5,DI $Q10ad=6,
+IF $W/4.$Q10/6,DI $Q10ad=9,
+IF $W/4.$Q10/7,DI $Q10ad=10,
+IF $W/4.$Q10/8,DI $Q10ad=11,
+IF $W/4.$Q10/9,DI $Q10ad=12,              
+
+
+[*data Q10adR(;)=
+1;Hyper/Super;
+2;Mini-market;
+3;Convenience store;
+4;PCS-Personal care store;
+5;Cosmetic store;
+6;Ecom;
+7;Grocery;
+8;Terminal market;
+
+9;Department store;
+10;Direct selling;
+11;Wechat Business;
+12;Sea Amoy and overseas purchasing;
+996;no answer<Z>;
+]
+
+[*set Q='Q10ad']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>', 
+
+
+
+
+
+
+
+
+[*data Q10bdR(;)=
+
+1;Hyper/Super;
+2;Mini-market;
+3;PCS-Personal care store;
+4;Cosmetic store;
+5;Ecom;
+6;Grocery store;
+
+]
+
+[*set Q='Q10bd']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z>
+**Summary<c>', 
+
+
+
+
+
+              
+
+
+[*DO A=1:15]
+DM $AD[A](99),
+[*END A] 
+[*DO A=1:15]
+IF $Q3/[A].$Q1/1     ,M $AD[A]/1 ,
+IF $Q3/[A].$Q1/2     ,M $AD[A]/2 ,
+IF $Q3/[A].$Q1/3     ,M $AD[A]/3 ,
+IF $Q3/[A].$Q2/1     ,M $AD[A]/4 ,
+IF $Q3/[A].$Q2/2     ,M $AD[A]/5 ,
+IF $Q3/[A].($Q2/3+4) ,M $AD[A]/6 ,
+IF $Q3/[A].$CT/1     ,M $AD[A]/7 ,
+IF $Q3/[A].($CT/1+2) ,M $AD[A]/8 ,
+IF $Q3/[A].($CT/3)   ,M $AD[A]/9 ,
+[*END A]
+
+[*DO A=1:15]
+[*data AD[A]R(;)= 
+1 ;$Q1/1;18-24;  
+2 ;$Q1/2;25-34;
+3 ;$Q1/3;35-44;
+4 ;$Q2/1;China 1+;
+5 ;$Q2/2;China 1;
+6 ;$Q2/3+4;China 2&3;
+7 ;$CT/1;Top 4;
+8 ;$CT/1+2;Top 4 + A;
+9 ;$CT/3;B;
+
+
+]
+
+[*set Q='AD[A]']
+[*set x=[[Q]R.#]/3]     
+dm $t[Q]=[*do i=1:x][[Q]R.i*3-1], $[Q]/[[Q]R.i*3-2],[*end i]   
+      r,f,                                                     
+v  $t[Q]='[*do i=1:x]                                          
+                    [[Q]R.i*3]-Base<b><S>**[[q]r.i*3][*sle]**     
+                 [*end i]                                      
+              **Missing<z>                                     
+              **mmmmm<c><s>',  
+[*END A]
+ 
+ 
+DM $CE(99),
+
+IF $Q3/13,M $CE/1,
+IF $Q9a01/13,M $CE/2,
+IF $Q9a04/13,M $CE/3,
+IF $Q9a05/13,M $CE/4,
+IF $Q9a010/13,M $CE/5,
+IF $Q5/13,M $CE/99,
+
+
+[*data CER(;)=
+
+1;TOMA score split;
+99;Equity attribute-Base<B><S>; 
+5;Helps me look younger for my age;
+3;Effectively reduces the multiple signs of aging;
+4;Effectively whitens facial skin;
+2;This brand gives me radiant, glowing skin;
+
+]              
+[*set Q='CE']
+dm $t[Q]=$[Q]/[*do i=1:[[Q]R.#]/2][[Q]R.i*2-1],[*end i]
+      r,f,
+v  $t[Q]='[*do i=1:[[Q]R.#]/2] 
+                      [[Q]R.i*2] [*sle]**
+                 [*end i]
+ **Missing<z><s>
+**Summary<c><s>',   
+               
+!!!Breakout               
+[*DO A=1:15]
+DM $BK1[A](99),
+[*END A] 
+[*DO A=1:15]
+IF $Q3/[A],M $BK1[A]/1,
+IF $Q3/[A].$Q1/1,M $BK1[A]/2,
+IF $Q3/[A].$Q1/2,M $BK1[A]/3,
+IF $Q3/[A].$Q1/3,M $BK1[A]/4,
+IF $Q3/[A].$Q1/4,M $BK1[A]/5,
+IF $Q3/[A].$CT/1,M $BK1[A]/6,
+IF $Q3/[A].($CT/1+2),M $BK1[A]/7,
+IF $Q3/[A].$CT/2,M $BK1[A]/8,
+IF $Q3/[A].$CT/3,M $BK1[A]/9,
+IF $Q3/[A].($Q2/1+2),M $BK1[A]/10,
+IF $Q3/[A].$Q2/1,M $BK1[A]/11,
+IF $Q3/[A].$Q2/2,M $BK1[A]/12,
+IF $Q3/[A].$Q2/3,M $BK1[A]/13,
+IF $Q3/[A].$Q2/4,M $BK1[A]/14,
+[*END A]
+
+[*DO A=1:15]
+[*data BK1[A]R(;)=
+1 ;t;National    ;
+2 ;$Q1/1;18-24       ;
+3 ;$Q1/2;25-34       ;
+4 ;$Q1/3;35-44       ;
+5 ;$Q1/4;45+         ;
+6 ;$CT/1;Top 4 City  ;
+7 ;$CT/1+2;Top 4+A City;
+8 ;$CT/2;A City      ;
+9 ;$CT/3;B city      ;
+10;$Q2/1+2;China1+/1   ;
+11;$Q2/1;China1+     ;
+12;$Q2/2;China1      ;
+13;$Q2/3;China2      ;
+14;$Q2/4;China3      ;
+
+
+]              
+[*set Q='BK1[A]']
+[*set x=[[Q]R.#]/3]     
+dm $t[Q]=[*do i=1:x][[Q]R.i*3-1], $[Q]/[[Q]R.i*3-2],[*end i]   
+      r,f,                                                     
+v  $t[Q]='[*do i=1:x]                                          
+                    [[Q]R.i*3]-Base<b><S>**[[q]r.i*3][*sle]**     
+                 [*end i]                                      
+              **Missing<z>                                     
+              **mmmmm<c><s>',  
+[*END A]  
+
+
+
+[*DO A=1:15]
+DM $BK2[A](99),
+[*END A] 
+[*DO A=1:15]
+IF $Q4/[A],M $BK2[A]/1,
+IF $Q4/[A].$Q1/1,M $BK2[A]/2,
+IF $Q4/[A].$Q1/2,M $BK2[A]/3,
+IF $Q4/[A].$Q1/3,M $BK2[A]/4,
+IF $Q4/[A].$Q1/4,M $BK2[A]/5,
+IF $Q4/[A].$CT/1,M $BK2[A]/6,
+IF $Q4/[A].($CT/1+2),M $BK2[A]/7,
+IF $Q4/[A].$CT/2,M $BK2[A]/8,
+IF $Q4/[A].$CT/3,M $BK2[A]/9,
+IF $Q4/[A].($Q2/1+2),M $BK2[A]/10,
+IF $Q4/[A].$Q2/1,M $BK2[A]/11,
+IF $Q4/[A].$Q2/2,M $BK2[A]/12,
+IF $Q4/[A].$Q2/3,M $BK2[A]/13,
+IF $Q4/[A].$Q2/4,M $BK2[A]/14,
+[*END A]
+
+[*DO A=1:15]
+[*data BK2[A]R(;)=
+1 ;t;National    ;
+2 ;$Q1/1;18-24       ;
+3 ;$Q1/2;25-34       ;
+4 ;$Q1/3;35-44       ;
+5 ;$Q1/4;45+         ;
+6 ;$CT/1;Top 4 City  ;
+7 ;$CT/1+2;Top 4+A City;
+8 ;$CT/2;A City      ;
+9 ;$CT/3;B city      ;
+10;$Q2/1+2;China1+/1   ;
+11;$Q2/1;China1+     ;
+12;$Q2/2;China1      ;
+13;$Q2/3;China2      ;
+14;$Q2/4;China3      ;
+
+
+]              
+[*set Q='BK2[A]']
+[*set x=[[Q]R.#]/3]     
+dm $t[Q]=[*do i=1:x][[Q]R.i*3-1], $[Q]/[[Q]R.i*3-2],[*end i]   
+      r,f,                                                     
+v  $t[Q]='[*do i=1:x]                                          
+                    [[Q]R.i*3]-Base<b><S>**[[q]r.i*3][*sle]**     
+                 [*end i]                                      
+              **Missing<z>                                     
+              **mmmmm<c><s>',  
+[*END A]  
+
+
+
+[*DO A=1:15]
+DM $BK3[A](99),
+[*END A] 
+[*DO A=1:15]
+IF $Q5b/[A],M $BK3[A]/1,
+IF $Q5b/[A].$Q1/1,M $BK3[A]/2,
+IF $Q5b/[A].$Q1/2,M $BK3[A]/3,
+IF $Q5b/[A].$Q1/3,M $BK3[A]/4,
+IF $Q5b/[A].$Q1/4,M $BK3[A]/5,
+IF $Q5b/[A].$CT/1,M $BK3[A]/6,
+IF $Q5b/[A].($CT/1+2),M $BK3[A]/7,
+IF $Q5b/[A].$CT/2,M $BK3[A]/8,
+IF $Q5b/[A].$CT/3,M $BK3[A]/9,
+IF $Q5b/[A].($Q2/1+2),M $BK3[A]/10,
+IF $Q5b/[A].$Q2/1,M $BK3[A]/11,
+IF $Q5b/[A].$Q2/2,M $BK3[A]/12,
+IF $Q5b/[A].$Q2/3,M $BK3[A]/13,
+IF $Q5b/[A].$Q2/4,M $BK3[A]/14,
+[*END A]
+
+[*DO A=1:15]
+[*data BK3[A]R(;)=
+1 ;t;National    ;
+2 ;$Q1/1;18-24       ;
+3 ;$Q1/2;25-34       ;
+4 ;$Q1/3;35-44       ;
+5 ;$Q1/4;45+         ;
+6 ;$CT/1;Top 4 City  ;
+7 ;$CT/1+2;Top 4+A City;
+8 ;$CT/2;A City      ;
+9 ;$CT/3;B city      ;
+10;$Q2/1+2;China1+/1   ;
+11;$Q2/1;China1+     ;
+12;$Q2/2;China1      ;
+13;$Q2/3;China2      ;
+14;$Q2/4;China3      ;
+
+
+]              
+[*set Q='BK3[A]']
+[*set x=[[Q]R.#]/3]     
+dm $t[Q]=[*do i=1:x][[Q]R.i*3-1], $[Q]/[[Q]R.i*3-2],[*end i]   
+      r,f,                                                     
+v  $t[Q]='[*do i=1:x]                                          
+                    [[Q]R.i*3]-Base<b><S>**[[q]r.i*3][*sle]**     
+                 [*end i]                                      
+              **Missing<z>                                     
+              **mmmmm<c><s>',  
+[*END A]  
+                                                           

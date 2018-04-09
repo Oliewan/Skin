@@ -1,0 +1,212 @@
+VT $TQ3="【Q3】 TOMA",
+VT $TQ4="【Q4】 UBA",
+VT $TQ5="【Q5】 ABA",
+VT $TQ5b="【Q5b】 P3M",
+VT $TAD1="【Awareness Driver - Aupres】",
+VT $TAD2="【Awareness Driver - Herborist】",
+VT $TAD3="【Awareness Driver - Chcedo】",
+VT $TAD4="【Awareness Driver - Clinique】",
+VT $TAD5="【Awareness Driver - Dabao】",
+VT $TAD6="【Awareness Driver - Estee Lauder】",
+VT $TAD7="【Awareness Driver - Pechoin】",
+VT $TAD8="【Awareness Driver - Innisfree】",
+VT $TAD9="【Awareness Driver - Inoherb】",
+VT $TAD10="【Awareness Driver - Kans】",
+VT $TAD11="【Awareness Driver - Lancome】",
+VT $TAD12="【Awareness Driver - Loreal】",
+VT $TAD13="【Awareness Driver - Olay】",
+VT $TAD14="【Awareness Driver - SK-II】",
+VT $TAD15="【Awareness Driver - Vichy】",
+
+VT $TTQ901="【Equity Attributes - Aupres】",
+VT $TTQ902="【Equity Attributes - Herborist】",
+VT $TTQ903="【Equity Attributes - Chcedo】",
+VT $TTQ904="【Equity Attributes - Clinique】",
+VT $TTQ905="【Equity Attributes - Dabao】",
+VT $TTQ906="【Equity Attributes - Estee Lauder】",
+VT $TTQ907="【Equity Attributes - Pechoin】",
+VT $TTQ908="【Equity Attributes - Innisfree】",
+VT $TTQ909="【Equity Attributes - Inoherb】",
+VT $TTQ9010="【Equity Attributes - Kans】",
+VT $TTQ9011="【Equity Attributes - Lancome】",
+VT $TTQ9012="【Equity Attributes - Loreal】",
+VT $TTQ9013="【Equity Attributes - Olay】",
+VT $TTQ9014="【Equity Attributes - SK-II】",
+VT $TTQ9015="【Equity Attributes - Vichy】",
+                                              
+VT $TBK11="【TOMA Breakout - Aupres】",
+VT $TBK12="【TOMA Breakout - Herborist】",
+VT $TBK13="【TOMA Breakout - Chcedo】",
+VT $TBK14="【TOMA Breakout - Clinique】",
+VT $TBK15="【TOMA Breakout - Dabao】",
+VT $TBK16="【TOMA Breakout - Estee Lauder】",
+VT $TBK17="【TOMA Breakout - Pechoin】",
+VT $TBK18="【TOMA Breakout - Innisfree】",
+VT $TBK19="【TOMA Breakout - Inoherb】",
+VT $TBK110="【TOMA Breakout - Kans】",
+VT $TBK111="【TOMA Breakout - Lancome】",
+VT $TBK112="【TOMA Breakout - Loreal】",
+VT $TBK113="【TOMA Breakout - Olay】",
+VT $TBK114="【TOMA Breakout - SK-II】",
+VT $TBK115="【TOMA Breakout - Vichy】",
+
+
+VT $TBK21="【UBA Breakout - Aupres】",
+VT $TBK22="【UBA Breakout - Herborist】",
+VT $TBK23="【UBA Breakout - Chcedo】",
+VT $TBK24="【UBA Breakout - Clinique】",
+VT $TBK25="【UBA Breakout - Dabao】",
+VT $TBK26="【UBA Breakout - Estee Lauder】",
+VT $TBK27="【UBA Breakout - Pechoin】",
+VT $TBK28="【UBA Breakout - Innisfree】",
+VT $TBK29="【UBA Breakout - Inoherb】",
+VT $TBK210="【UBA Breakout - Kans】",
+VT $TBK211="【UBA Breakout - Lancome】",
+VT $TBK212="【UBA Breakout - Loreal】",
+VT $TBK213="【UBA Breakout - Olay】",
+VT $TBK214="【UBA Breakout - SK-II】",
+VT $TBK215="【UBA Breakout - Vichy】",
+
+
+VT $TBK31="【P3M Breakout - Aupres】",
+VT $TBK32="【P3M Breakout - Herborist】",
+VT $TBK33="【P3M Breakout - Chcedo】",
+VT $TBK34="【P3M Breakout - Clinique】",
+VT $TBK35="【P3M Breakout - Dabao】",
+VT $TBK36="【P3M Breakout - Estee Lauder】",
+VT $TBK37="【P3M Breakout - Pechoin】",
+VT $TBK38="【P3M Breakout - Innisfree】",
+VT $TBK39="【P3M Breakout - Inoherb】",
+VT $TBK310="【P3M Breakout - Kans】",
+VT $TBK311="【P3M Breakout - Lancome】",
+VT $TBK312="【P3M Breakout - Loreal】",
+VT $TBK313="【P3M Breakout - Olay】",
+VT $TBK314="【P3M Breakout - SK-II】",
+VT $TBK315="【P3M Breakout - Vichy】",
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+
+
+
+dm x $h1=   
+$w/1+2:"Rolling wave***Aug+Sep*([~1])",
+$w/2+3:"Sep+Nov*([~2])",
+$w/3+4:"Nov+Dec*([~3])",  
+$w/4+5:"Dec+Jan*([~4])", 
+$w/5+6:"Jan+March*([~5])", 
+
+
+$w/1       :"National***Aug*([~1])",
+$w/2       :"Sep*([~2])",
+$w/3       :"Nov*([~3])",
+$w/4       :"Dec*([~4])",
+$w/5       :"Jan*([~5])",
+$w/6       :"March*([~6])",
+
+xt $h1="KPI",
+
+
+dm x $h2=  
+
+ 
+$W/1.$Q6/2.$Q6A/2 .$Q7B2/13 :" 宋茜TVC （110178）-【Aug】***Olay*([~1])",
+$W/1.$Q6/n2.$Q6A/2          :"没看过*([~2])",   
+
+$W/2.$Q6/2.$Q6A/2 .$Q7B2/13 :" 宋茜TVC （110178）-【Sep】***Olay*([~1])",
+$W/2.$Q6/n2.$Q6A/2          :"没看过*([~2])",     
+$W/2.$Q6/1.$Q6A/1 .$Q7B1/13 :" Olay Bride to be（110182）-【Sep】***Olay*([~1])",
+$W/2.$Q6/n1.$Q6A/1          :"没看过*([~2])",   
+
+
+$W/3.$Q6/14.$Q6A/14 .$Q7B14/13 :" Olay Ruler_170522_GYY 15s_RC-【Nov】***Olay*([~1])",
+$W/3.$Q6/n14.$Q6A/14          :"没看过*([~2])",   
+$W/3.$Q6/15.$Q6A/15 .$Q7B15/13 :" Olay-Mom-2mins-Sep‘17-【Nov】***Olay*([~1])",
+$W/3.$Q6/n15.$Q6A/15          :"没看过*([~2])",   
+$W/3.$Q6/16.$Q6A/16 .$Q7B16/13 :" Olay_CELL SCIENCE_RG_15S_DIGITAL NATIONAL_HD-【Nov】***Olay*([~1])",
+$W/3.$Q6/n16.$Q6A/16          :"没看过*([~2])",   
+$W/3.$Q6/17.$Q6A/17 .$Q7B17/13 :"Trueview--28 Day AA final--天猫常规tagon-【Nov】***Olay*([~1])",
+$W/3.$Q6/n17.$Q6A/17          :"没看过*([~2])",   
+
+
+$W/4.$Q6/19.$Q6A/19 .$Q7B19/13 :"He Sui 60s Magic AA vedio【Dec】***Olay*([~1])",
+$W/4.$Q6/n19.$Q6A/19          :"没看过*([~2])",   
+$W/4.$Q6/24.$Q6A/24 .$Q7B24/13 :"Magic AA-【Dec】***Olay*([~1])",
+$W/4.$Q6/n24.$Q6A/24          :"没看过*([~2])",   
+
+$W/6.$Q6/25.$Q6A/25 .$Q7B25/13 :"White_15s_universal(HDCAM)_2【March】***Olay*([~1])",
+$W/6.$Q6/n25.$Q6A/25          :"没看过*([~2])",   
+$W/6.$Q6/26.$Q6A/26 .$Q7B26/13 :"Olay_CL_Tmall_rev5_HD【March】***Olay*([~1])",
+$W/6.$Q6/n26.$Q6A/26          :"没看过*([~2])",   
+
+xt $h2="Olay Copy",
+
+
+dm x $h5=   
+
+
+$w/1       :"National***Aug*([~1])",
+$w/2       :"Sep*([~2])",
+$w/3       :"Nov*([~3])",
+$w/4       :"Dec*([~4])",
+$w/6       :"March*([~5])",
+
+
+
+xt $h5="M2",
+
+
+
+dm x $h6=   
+
+
+$w/1       :"National***Aug*([~1])",
+$w/2       :"Sep*([~2])",
+$w/3       :"Nov*([~3])",
+$w/4       :"Dec*([~4])",
+$w/5       :"Jan*([~5])",
+$w/6       :"March*([~6])",
+
+
+
+xt $h6="Wave",
+
+
+dm x $h8=
+
+t    :"TOMA***Aug",
+t    :"Sep",
+t    :"Nov",
+t    :"Dec",
+t    :"Jan",
+t    :"March",
+t    :"UBA***Aug",
+t    :"Sep",
+t    :"Nov",
+t    :"Dec",
+t    :"Jan",
+t    :"March",
+t    :"P3M Purchase***Aug",
+t    :"Sep",
+t    :"Nov",
+t    :"Dec",
+t    :"Jan",
+t    :"March",
+xt $h8="Breakout ", 
+
+
+
+
+
+
+
+
+
+
+
+
+

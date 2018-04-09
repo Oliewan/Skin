@@ -1,0 +1,356 @@
+[*set q='Q3']
+  [*for b=1]
+  [*for h=1]
+    if $bb[b]/nb, then,
+        t#[q][&b][h](F=BRS)=$t[q]*$h[h],
+        bt='b[b].[Base[b]]',
+     endif,
+    [*end h]
+    [*end b]
+
+[*set q='Q4']
+  [*for b=1]
+  [*for h=1]
+    if $bb[b]/nb, then,
+        t#[q][&b][h](F=BRS)=$t[q]*$h[h],
+        bt="b[b].[Base[b]]",
+     endif,
+    [*end h]
+    [*end b]
+
+
+[*set q='Q5']
+  [*for b=1]
+  [*for h=1]
+    if $bb[b]/nb, then,
+        t#[q][&b][h]=$t[q]*$h[h],
+        bt="b[b].[Base[b]]",
+     endif,
+    [*end h]
+    [*end b]
+    
+[*set q='Q5B']
+  [*for b=45]
+  [*for h=1]
+    if $bb[b]/nb, then,
+        t#[q][&b][h]=$t[q]*$h[h],
+        bt="b[b].[Base[b]]",
+     endif,
+    [*end h]
+    [*end b]    
+    
+    
+![*set q='rQ6']
+!  [*for b=58]
+!  [*for h=1]
+!    if $bb[b]/nb, then,
+!        t#[q][&b][h](F=NRBL)=$t[q]*$h[h],
+!        bt="b[b].[Base[b]]",
+!     endif,
+!    [*end h]
+!    [*end b]    
+!
+![*set q='rsQ6']
+!  [*for b=58]
+!  [*for h=1]
+!    if $bb[b]/nb, then,
+!        t#[q][&b][h](F=NRBL)=$t[q]*$h[h],
+!        bt="b[b].[Base[b]]",
+!     endif,
+!    [*end h]
+!    [*end b]       
+    
+
+
+[*set q='Q6']
+  [*for b=44]
+  [*for h=1]
+    if $bb[b]/nb, then,
+        t#[q][&b][h](F=NRBL)=$t[q]*$h[h],
+        bt="b[b].[Base[b]]",
+     endif,
+    [*end h]
+    [*end b]       
+
+
+
+
+
+[*DO A=1:18] 
+[*set q='Q7B[a]']
+  [*for b=[A]+16]
+  [*for h=1]
+    if $bb[b]/nb, then,
+        t#[q]=$t[q]*$h[h],
+        bt="b[b].[Base[b]]",
+     endif,
+    [*end h]
+    [*end b]
+[*END A]
+     
+[*DO A=19:24] 
+[*set q='Q7B[a]']
+  [*for b=[A]+33]
+  [*for h=1]
+    if $bb[b]/nb, then,
+        t#[q]=$t[q]*$h[h],
+        bt="b[b].[Base[b]]",
+     endif,
+    [*end h]
+    [*end b]
+[*END A]   
+
+[*DO A=25:32] 
+[*set q='Q7B[a]']
+  [*for b=[A]+68]
+  [*for h=1]
+    if $bb[b]/nb, then,
+        t#[q]=$t[q]*$h[h],
+        bt="b[b].[Base[b]]",
+     endif,
+    [*end h]
+    [*end b]
+[*END A]  
+    
+
+
+
+[*DO A=1:9]
+[*set q='Q80[a]']
+  [*for b=[A]+16]
+  [*for h=1]
+    if $bb[b]/nb, then,
+        t#[q]=$t[q]*$h[h],
+        bt="b[b].[Base[b]]",
+     endif,
+    [*end h]
+    [*end b]
+[*END A]
+
+!!!11月份广告编码后期有误，故分开
+[*DO A=10:18]
+[*set q='Q80[a]']
+  [*for b=[A]+25]
+  [*for h=1]
+    if $bb[b]/nb, then,
+        t#[q]=$t[q]*$h[h],
+        bt="b[b].[Base[b]]",
+     endif,
+    [*end h]
+    [*end b]
+[*END A]
+!!!12月
+[*DO A=19:24]
+[*set q='Q80[a]']
+  [*for b=[A]+33]
+  [*for h=1]
+    if $bb[b]/nb, then,
+        t#[q]=$t[q]*$h[h],
+        bt="b[b].[Base[b]]",
+     endif,
+    [*end h]
+    [*end b]
+[*END A]
+!!!3月
+[*DO A=25:32]
+[*set q='Q80[a]']
+  [*for b=[A]+68]
+  [*for h=1]
+    if $bb[b]/nb, then,
+        t#[q]=$t[q]*$h[h],
+        bt="b[b].[Base[b]]",
+     endif,
+    [*end h]
+    [*end b]
+[*END A]
+
+
+
+    
+
+
+dm x $tt=t  :"TT<S>",
+[*do j= 1:15]
+[*set q='TQ90[j]']
+  [*for b=[j]+1]
+  [*for h=1]
+    if $bb[b]/nb, then,
+       t#[q][&b][h]=$tt*$h[h],
+       bt="[Base[b]]",
+       vt=$TTQ90[j],
+    endif,  
+    
+  [*do i=1:13]
+    if $bb[b]/nb.$ori/3.$w/4, then,   
+       +t#[j]r[i] =$tQ90[j]r[i] *$h[h]+[rebase.(((j-1)*13)+i)*2], 
+    elseif $bb[b]/nb.($w/n4+$ori/n3).$w/n6,then,
+       +t#[j]r[i] =$tQ90[j]r[i] *$h[h]+1,
+        elseif $bb[b]/nb.$w/6, then,
+        +t#[j]r[i] =$tQ90[j]r[i]*$h[h]+[rebase2.j*2],       
+     endif,       
+  [*end i] 
+     
+  !if $bb[b]/nb, then,+t#tq90[j]=$TTQ90[j]*$h[h],endif,
+
+  [*end h]
+  [*end b]
+[*end j] 
+    
+    
+
+
+
+![*set q='rq7']
+!  [*for b=92]
+!  [*for h=1]
+!    if $bb[b]/nb,then,  
+!       t#b5n01=@$b5n01*$h[h],
+!       vt='【rQ7】Equity Score',
+!       V="[rq7R.2]",
+!       bt="b[b].[Base[b]]",
+!    endif, 
+!    [*do A=2:15]
+!    if $bb[b]/nb,then,
+!       +t#b5n0[A]=@$b5n0[a]*$h[h], 
+!       V="[rq7R.a*2]",
+!    endif,
+!    [*end a] 
+!    [*end h]
+!    [*end b]
+!
+!
+![*DO A=1:15]
+![*set q='rQ70[a]']
+!  [*for b=[A]+58]
+!  [*for h=1]
+!    if $bb[b]/nb, then,
+!        t#[q](f=sdv)=$t[q]*$h[h],
+!        bt="b[b].[Base[b]]",
+!     endif,
+!    [*end h]
+!    [*end b]
+![*END A]
+!
+!    
+![*set q='rQ8']
+!  [*for b=58]
+!  [*for h=1]
+!    if $bb[b]/nb, then,
+!        t#[q][&b][h](F=NRBL)=$t[q]*$h[h],
+!        bt="b[b].[Base[b]]",
+!     endif,
+!    [*end h]
+!    [*end b]  
+!
+!
+!
+!
+![*DO A=1:15]
+![*set q='rQ90[a]']
+!  [*for b=[A]+73]
+!  [*for h=1]
+!    if $bb[b]/nb, then,
+!        t#[q]=$t[q]*$h[h],
+!        bt="b[b].[Base[b]]",
+!     endif,
+!    [*end h]
+!    [*end b]
+![*END A]
+
+
+
+
+
+
+
+
+
+
+
+  
+ [*set q='Q10ad']
+  [*for b=1]
+  [*for h=1]
+    if $bb[b]/nb.($Q10ad/1..12+996), then,
+        t#[q][&b][h]=$t[q]*$h[h],
+        bt="b[b].[Base[b]]",
+     endif,
+    [*end h]
+    [*end b]
+    
+  [*set q='Q10bd']
+  [*for b=1]
+  [*for h=1]
+    if $bb[b]/nb.($Q10bd/1..6), then,
+        t#[q][&b][h]=$t[q]*$h[h],
+        bt="b[b].[Base[b]]",
+     endif,
+    [*end h]
+    [*end b]
+
+
+[*set q='ct']
+  [*for b=1]
+  [*for h=1]
+    if $bb[b]/nb, then,
+        t#[q][&b][h](F=BRS)=$t[q]*$h[h],
+        bt='b[b].[Base[b]]',
+     endif,
+    [*end h]
+    [*end b]
+    
+[*set q='region']
+  [*for b=1]
+  [*for h=1]
+    if $bb[b]/nb, then,
+        t#[q][&b][h](F=BRS)=$t[q]*$h[h],
+        bt='b[b].[Base[b]]',
+     endif,
+    [*end h]
+    [*end b]
+    
+[*set q='Q1']
+  [*for b=1]
+  [*for h=1]
+    if $bb[b]/nb, then,
+        t#[q][&b][h](F=BRS)=$t[q]*$h[h],
+        bt='b[b].[Base[b]]',
+     endif,
+    [*end h]
+    [*end b]    
+    
+[*set q='Q2']
+  [*for b=1]
+  [*for h=1]
+    if $bb[b]/nb, then,
+        t#[q][&b][h](F=BRS)=$t[q]*$h[h],
+        bt='b[b].[Base[b]]',
+     endif,
+    [*end h]
+    [*end b]
+
+
+
+[*set q='PT']
+  [*for b=1]
+  [*for h=1]
+    if $bb[b]/nb, then,
+        t#[q][&b][h](F=BRS)=$t[q]*$h[h],
+        bt='b[b].[Base[b]]',
+     endif,
+    [*end h]
+    [*end b]
+
+[*set q='Q2']
+  [*for b=1]
+  [*for h=3]
+    if $bb[b]/nb, then,
+        t#[q][&b][h](F=BRS)=$t[q]*$h[h],
+        bt='b[b].[Base[b]]',
+     endif,
+    [*end h]
+    [*end b]
+    
+
+
+    

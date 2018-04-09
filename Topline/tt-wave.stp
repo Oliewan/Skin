@@ -1,0 +1,212 @@
+![*set q='pt']
+!  [*for b=1]
+!  [*for h=1]
+!    if $bb[b]/nb, then,
+!        t#[q][&b][h]=$t[q]*$h[h],
+!        bt="b[b].[Base[b]]",
+!     endif,
+!    [*end h]
+!    [*end b]
+
+[*set q='Q3']
+  [*for b=1]
+  [*for h=1]
+    if $bb[b]/nb, then,
+        t#[q][&b][h]=$t[q]*$h[h],
+        bt="b[b].[Base[b]]",
+     endif,
+    [*end h]
+    [*end b]
+
+[*set q='Q4']
+  [*for b=1]
+  [*for h=1]
+    if $bb[b]/nb, then,
+        t#[q][&b][h]=$t[q]*$h[h],
+        bt="b[b].[Base[b]]",
+     endif,
+    [*end h]
+    [*end b]
+
+
+![*set q='Q5']
+!  [*for b=1]
+!  [*for h=1]
+!    if $bb[b]/nb, then,
+!        t#[q][&b][h]=$t[q]*$h[h],
+!        bt="b[b].[Base[b]]",
+!     endif,
+!    [*end h]
+!    [*end b]
+    
+[*set q='Q5B']
+  [*for b=45]
+  [*for h=1]
+    if $bb[b]/nb, then,
+        t#[q][&b][h]=$t[q]*$h[h],
+        bt="b[b].[Base[b]]",
+     endif,
+    [*end h]
+    [*end b]
+    
+      
+
+
+dm x $tt=t  :"TT<S>",
+[*for j=13:12:6:7:1:2:3:4:5:8:9:10:11:14:15]
+[*set q='TQ90[j]']
+  [*for b=[j]+1]
+  [*for h=5]
+    if $bb[b]/nb, then,
+       t#[q][&b][h]=$tt*$h[h],
+       bt="[Base[b]]",
+       vt=$TTQ90[j],
+    endif,  
+  [*for i=1:4:5:2:3:6:7:8:9:10:11:12:13] 
+     if $bb[b]/nb.$ori/3.$w/4, then,   
+       +t#[j]r[i] =$tQ90[j]r[i] *$h[h]+[rebase.(((j-1)*13)+i)*2], 
+    elseif $bb[b]/nb.($w/n4+$ori/n3).$w/n6,then,
+       +t#[j]r[i] =$tQ90[j]r[i] *$h[h]+1,
+        elseif $bb[b]/nb.$w/6, then,
+        +t#[j]r[i] =$tQ90[j]r[i]*$h[h]+[rebase2.j*2],       
+     endif, 
+  [*end i]  
+  [*end h]
+  [*end b]
+[*end j] 
+    
+    
+
+    
+
+[*FOR A=13:12:6:7:1:2:3:4:5:8:9:10:11:14:15]
+[*set q='AD[A]']
+  [*for b=1]
+  [*for h=6]
+    if $bb[b]/nb, then,
+        t#[q][&b][h]=$t[q]*$h[h],
+        bt="b[b].[Base[b]]",
+     endif,
+    [*end h]
+    [*end b] 
+[*END A]
+
+
+
+     
+
+[*set q='QQ6']
+  [*for b=44]
+  [*for h=6]
+    if $bb[b]/nb, then,
+        t#[q][&b][h](F=NRBL)=$t[q]*$h[h],
+        bt="b[b].[Base[b]]",
+        VT="【Copy Performance】",
+     endif,
+    [*end h]
+    [*end b]  
+
+[*set q='CE']
+  [*for b=1]
+  [*for h=2]
+    if $bb[b]/nb, then,
+        t#[q][&b][h](F=NRBL)=$t[q]*$h[h],
+        bt="b[b].[Base[b]]",
+        VT="【Communication Effectiveness】",
+     endif,
+    [*end h]
+    [*end b]  
+
+ 
+    
+![*DO A=1:15]
+![*set q='BK1[A]']
+!  [*for b=1]
+!  [*for h=6]
+!    if $bb[b]/nb, then,
+!        t#[q][&b][h]=$t[q]*$h[h],
+!        bt="b[b].[Base[b]]",
+!     endif,
+!    [*end h]
+!    [*end b] 
+![*END A]
+!
+!
+![*DO A=1:15]
+![*set q='BK2[A]']
+!  [*for b=1]
+!  [*for h=6]
+!    if $bb[b]/nb, then,
+!        t#[q][&b][h]=$t[q]*$h[h],
+!        bt="b[b].[Base[b]]",
+!     endif,
+!    [*end h]
+!    [*end b] 
+![*END A]
+!
+!
+![*DO A=1:15]
+![*set q='BK3[A]']
+!  [*for b=45]
+!  [*for h=6]
+!    if $bb[b]/nb, then,
+!        t#[q][&b][h]=$t[q]*$h[h],
+!        bt="b[b].[Base[b]]",
+!     endif,
+!    [*end h]
+!    [*end b] 
+![*END A]    
+
+
+!!!1:改title，增加月份；2：增加bkseq条件；3：增加if框架；4：改if和vt循环里的数字，如：bkseq.a*6-4，a*5-4，
+[*data brand(;)=
+1;Aupres;
+2;Herborist;
+3;Chcedo;
+4;Clinique;
+5;Dabao;
+6;Estee Lauder;
+7;Pechoin;
+8;Innisfree;
+9; Inoherb;
+10;Kans;
+11;Lancome;
+12;Loreal;
+13;Olay;
+14;SK-ll;
+15;Vichy;
+]
+[*data bkseq(;)=
+1;$w/1;$w/2;$w/3;$w/4;$w/5;$w/6;
+2;$w/1;$w/2;$w/3;$w/4;$w/5;$w/6;
+3;$w/1;$w/2;$w/3;$w/4;$w/5;$w/6;
+]
+
+[*DO a=1:15] 
+t#bk[a](f=nitb)=$tbk11*$h8,
+[*end a]
+
+[*do a=1:3]
+[*do i=1:15] 
+[*set q='bk[a][i]']
+    if [bkseq.a*7-5], then,
+        t#bk[i]=$t[q]*[a*6-5],
+        vt='【Breakout-[brand.I*2]】',
+    endif,
+    if [bkseq.a*7-4], then,
+        t#bk[i]=$t[q]*[a*6-4],
+    endif,
+    if [bkseq.a*7-3], then,
+        t#bk[i]=$t[q]*[a*6-3],
+    endif,
+    if [bkseq.a*7-2], then,
+        t#bk[i]=$t[q]*[a*6-2],
+    endif,
+    if [bkseq.a*7-1], then,
+        t#bk[i]=$t[q]*[a*6-1],
+    endif,
+    if [bkseq.a*7], then,
+        t#bk[i]=$t[q]*[a*6],
+    endif,
+[*end i]    
+[*end a]

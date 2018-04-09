@@ -1,0 +1,53 @@
+  
+= ----- 2015/2/1 星期日 下午 15:57:38
+= MRDCL version 2011.1 Startup
+= E:\QD\my project\Skin项目资料\table\March\多期对比\table.stp
+= Copyright 1990 - 2009 MRDC Software, Kent, England
+  CEP
+  CSV 2002 style
+  NOLSUM
+  OLDNAMES
+  OLDWQ
+  TIDY
+  C(A)<listdata>=DATA.CSV
+  C(A)=..\ddm\SKIN-TW.DAT
+  C(A)=..\ddm\SKIN-MARCH.DAT
+  OUTPUT=..\OUTPUT\SKIN-MARCH‘18-多期对比-V6.TAB
+  CHARSET=DOUBLE
+= MRDCL version 2011.1 startup completed
+  
+= ----- 2015/2/1 星期日 下午 15:57:38
+= MRDCL compilation phase startup
+  Starting compilation
+= Stage 1 (data)
+= Stage 2 (tables)
+= MRDCL compilation phase completed
+  
+= ----- 2015/2/1 星期日 下午 15:57:38
+= MRDCL execution phase startup
+= Stage 1 (data)
+  CSV file column 2 used to set $W
+  Now opening file (A) number 2
+  E:\QD\my project\Skin项目资料\table\March\ddm\SKIN-TW.DAT
+  Now opening file (A) number 3
+  E:\QD\my project\Skin项目资料\table\March\ddm\SKIN-MARCH.DAT
+=  Data lines read 12847
+=  Records 12847
+  Number of times reached finish data 12847
+  Write commands rejected 1978
+  Write commands accepted 10869
+  IDF records 10869
+= Stage 2 (tables)
+  Records to be read 10869
+  Passes needed 4
+= MRDCL execution phase completed
+  
+= ----- 2015/2/1 星期日 下午 15:57:38
+= MRDCL print phase startup
+= MRDCL print phase completed
+= CL run completed
+  Data lines read 12847
+  IDF data records 10869
+  Table pages 211
+  
+= ----- 2015/2/1 星期日 下午 15:57:38

@@ -1,0 +1,364 @@
+VT $TW='【Wave】',
+VT $TM="【Module】",
+VT $Tcornov="【11月广告编码错误】",
+VT $TSL="【Select samples】",
+VT $Tori="【Orientation】",
+VT $Tcity="【TOP4 city】",
+
+
+VT $TPT="【Data source】",
+VT $Tct="【City tier】",
+VT $Tregion="【Region】",
+VT $TQ1="【Q1】Age:How old are you? (Single)",
+VT $TQ2="【Q2】Income: What is your personal monthly income?(Single)",
+VT $TQ3="【Q3】 TOMA",
+VT $TQ4="【Q4】 UBA",
+VT $TQ5="【Q5】 ABA",
+VT $TQ5b="【Q5b】 P3M",
+
+!!!M1
+VT $TrQ6="【rQ6】Substitution",
+VT $TrSQ6="【rSQ6】Consideration",
+
+VT $TrQ701="【rQ701】OAR-Aupres",
+VT $TrQ702="【rQ702】OAR-Herborist",
+VT $TrQ703="【rQ703】OAR-Chcedo",
+VT $TrQ704="【rQ704】OAR-Clinique",
+VT $TrQ705="【rQ705】OAR-Dabao",
+VT $TrQ706="【rQ706】OAR-Estee Lauder",
+VT $TrQ707="【rQ707】OAR-Pechoin",
+VT $TrQ708="【rQ708】OAR-Innisfree",
+VT $TrQ709="【rQ709】OAR-Inoherb",
+VT $TrQ7010="【rQ7010】OAR-Kans",
+VT $TrQ7011="【rQ7011】OAR-Lancome",
+VT $TrQ7012="【rQ7012】OAR-Loreal",
+VT $TrQ7013="【rQ7013】OAR-Olay",
+VT $TrQ7014="【rQ7014】OAR-SK-II",
+VT $TrQ7015="【rQ7015】OAR-Vichy",
+
+VT $TrQ8="【rQ8】CAA", 
+
+VT $TrQ901="【rQ901】SOA-Aupres",
+VT $TrQ902="【rQ902】SOA-Herborist",
+VT $TrQ903="【rQ903】SOA-Chcedo",
+VT $TrQ904="【rQ904】SOA-Clinique",
+VT $TrQ905="【rQ905】SOA-Dabao",
+VT $TrQ906="【rQ906】SOA-Estee Lauder",
+VT $TrQ907="【rQ907】SOA-Pechoin",
+VT $TrQ908="【rQ908】SOA-Innisfree",
+VT $TrQ909="【rQ909】SOA-Inoherb",
+VT $TrQ9010="【rQ9010】SOA-Kans",
+VT $TrQ9011="【rQ9011】SOA-Lancome",
+VT $TrQ9012="【rQ9012】SOA-Loreal",
+VT $TrQ9013="【rQ9013】SOA-Olay",
+VT $TrQ9014="【rQ9014】SOA-SK-II",
+VT $TrQ9015="【rQ9015】SOA-Vichy",
+
+VT $TrQ12="【rQ12】Awareness：Please select the products you've seen recently",
+VT $TrQ13="【rQ13】P6M: Which of the following products did you purchase in P6M?(Multiple choice)",
+VT $TrQ14="【rQ14】Will you purchase below products in the future?（Multiple choice）",
+
+VT $TQ6a="【Q6a】出示的广告",
+VT $TQ6="【Q6】Copy Awareness - Please select the copy you've seen recently",
+
+
+
+VT $TQ7b1="【Q7-1】 Copy Brand Linkage-Olay Bride to be(110182)", 
+VT $TQ7b2="【Q7-2】 Copy Brand Linkage-Olay Song Qian TVC(110178)", 
+VT $TQ7b3="【Q7-3】 Copy Brand Linkage-Loreal Celebrity articles(Wu Yifan|Show|Loreal mine mud long-term oil control cleansing milk) ",
+VT $TQ7b4="【Q7-4】 Copy Brand Linkage-Estee Lauder Makeup Liquid Foundation",   
+VT $TQ7b5="【Q7-5】 Copy Brand Linkage-Estee Lauder Celebrity articles(Yang Mi|Show|Pure translucent skin)  Nutritious Vitality Radiant Energy Lotion(110179)", 
+VT $TQ7b6="【Q7-6】 Copy Brand Linkage-Lancome Genifique Yeux Light-Pearl (110180)",
+VT $TQ7b7="【Q7-7】 Copy Brand Linkage-Kans Hydrating Silky Essence Mask(110181)",   
+VT $TQ7b8="【Q7-8】 Copy Brand Linkage-Aupres Base Care Essence II Golden Circulation (110172)", 
+VT $TQ7b9="【Q7-9】 Copy Brand Linkage-Loreal Celebrity articles(Dilireba|Show) (110176)", 
+
+VT $TQ7b10="【Q7-10】 Copy Brand Linkage-Lancome Advanced Genifique Sensitive-Show articles(Lady show)-15s  ", 
+VT $TQ7b11="【Q7-11】 Copy Brand Linkage-Loreal Revitalift Pure Centella Micro.essence Water-Celebrity articles(Gongli shows)-15s  ",
+VT $TQ7b12="【Q7-12】 Copy Brand Linkage-Loreal Youth Code Pre.essent Eye Essence-Celebrity articles Dilireba-15s",
+VT $TQ7b13="【Q7-13】 Copy Brand Linkage-Estee Lauder Advanced Night Repair-Show-15s  ", 
+VT $TQ7b14="【Q7-14】 Copy Brand Linkage-Olay Ruler_170522_GYY 15s_RC  ", 
+VT $TQ7b15="【Q7-15】 Copy Brand Linkage-Olay-Mom-2mins-Sep‘17",
+VT $TQ7b16="【Q7-16】 Copy Brand Linkage-Olay_CELL SCIENCE_RG_15S_DIGITAL NATIONAL_HD   ", 
+VT $TQ7b17="【Q7-17】 Copy Brand Linkage-Olay Trueview--28 Day AA final--Tianmao conventional tagon   ", 
+VT $TQ7b18="【Q7-18】 Copy Brand Linkage-Estee Lauder Advanced Night Repair Eye Concentrate Matrix ", 
+VT $TQ7b19="【Q7-19】 Copy Brand Linkage-Olay He Sui 60s Magic AA vedio  ", 
+VT $TQ7b20="【Q7-20】 Copy Brand Linkage-Pechoin Sanshenghua 15s",
+VT $TQ7b21="【Q7-21】 Copy Brand Linkage-Kans 1208VIP   ", 
+VT $TQ7b22="【Q7-22】 Copy Brand Linkage-Lancome Absolue precious cells revitalizing care-silky cream  ", 
+VT $TQ7b23="【Q7-23】 Copy Brand Linkage-Estee Lauder Revitalizing superme+ global anti-aging power soft creme",   
+VT $TQ7b24="【Q7-24】 Copy Brand Linkage-Magic AA ",
+VT $TQ7b25="【Q7-25】 Copy Brand Linkage-White_15s_universal(HDCAM)_2   ",
+VT $TQ7b26="【Q7-26】 Copy Brand Linkage-Olay_CL_Tmall_rev5_HD  ",
+VT $TQ7b27="【Q7-27】 Copy Brand Linkage-Xiaohongpingjushuiguangjinghua20180206 ",
+VT $TQ7b28="【Q7-28】 Copy Brand Linkage-Lancome xiaoheipinganpingjinghua180227 ",
+VT $TQ7b29="【Q7-29】 Copy Brand Linkage-Lancome hufupin180130  ",
+VT $TQ7b30="【Q7-30】 Copy Brand Linkage-Sanshenghuahuaniangshui",
+VT $TQ7b31="【Q7-31】 Copy Brand Linkage-Loreal jixuecaoweijinghualu180102  ",
+VT $TQ7b32="【Q7-32】 Copy Brand Linkage-Estee Lauder xiaozongpingjinghua   ",
+
+
+
+VT $TQ801="【Q8-01】 Copy aware source(TV/Digital)-Olay Bride to be(110182)",  
+VT $TQ802="【Q8-02】 Copy aware source(TV/Digital)-Olay Song Qian TVC(110178)",
+VT $TQ803="【Q8-03】 Copy aware source(TV/Digital)-Loreal Celebrity articles(Wu Yifan|Show|Loreal mine mud long-term oil control cleansing milk) ",
+VT $TQ804="【Q8-04】 Copy aware source(TV/Digital)-Estee Lauder Makeup Liquid Foundation", 
+VT $TQ805="【Q8-05】 Copy aware source(TV/Digital)-Estee Lauder Celebrity articles(Yang Mi|Show|Pure translucent skin)  Nutritious Vitality Radiant Energy Lotion(110179)",
+VT $TQ806="【Q8-06】 Copy aware source(TV/Digital)-Lancome Genifique Yeux Light-Pearl (110180)",   
+VT $TQ807="【Q8-07】 Copy aware source(TV/Digital)-Kans Hydrating Silky Essence Mask(110181)", 
+VT $TQ808="【Q8-08】 Copy aware source(TV/Digital)-Aupres Base Care Essence II Golden Circulation (110172)",   
+VT $TQ809="【Q8-09】 Copy aware source(TV/Digital)-Loreal Celebrity articles(Dilireba|Show) (110176)", 
+
+VT $TQ8010="【Q8-10】 Copy aware source-Lancome Advanced Genifique Sensitive-Show articles(Lady show)-15s  ",  
+VT $TQ8011="【Q8-11】 Copy aware source-Loreal Revitalift Pure Centella Micro.essence Water-Celebrity articles(Gongli shows)-15s  ",   
+VT $TQ8012="【Q8-12】 Copy aware source-Loreal Youth Code Pre.essent Eye Essence-Celebrity articles Dilireba-15s", 
+VT $TQ8013="【Q8-13】 Copy aware source-Estee Lauder Advanced Night Repair-Show-15s  ",
+VT $TQ8014="【Q8-14】 Copy aware source-Olay Ruler_170522_GYY 15s_RC  ",   
+VT $TQ8015="【Q8-15】 Copy aware source-Olay-Mom-2mins-Sep‘17",   
+VT $TQ8016="【Q8-16】 Copy aware source-Olay_CELL SCIENCE_RG_15S_DIGITAL NATIONAL_HD   ",  
+VT $TQ8017="【Q8-17】 Copy aware source-Olay Trueview--28 Day AA final--Tianmao conventional tagon   ",
+VT $TQ8018="【Q8-18】 Copy aware source-Estee Lauder Advanced Night Repair Eye Concentrate Matrix ",   
+VT $TQ8019="【Q8-19】 Copy aware source-Olay He Sui 60s Magic AA vedio  ", 
+VT $TQ8020="【Q8-20】 Copy aware source-Pechoin Sanshenghua 15s",  
+VT $TQ8021="【Q8-21】 Copy aware source-Kans 1208VIP   ",  
+VT $TQ8022="【Q8-22】 Copy aware source-Lancome Absolue precious cells revitalizing care-silky cream  ",   
+VT $TQ8023="【Q8-23】 Copy aware source-Estee Lauder Revitalizing superme+ global anti-aging power soft creme",
+VT $TQ8024="【Q8-24】 Copy aware source-Magic AA", 
+VT $TQ8025="【Q8-25】 Copy aware source-White_15s_universal(HDCAM)_2  ", 
+VT $TQ8026="【Q8-26】 Copy aware source-Olay_CL_Tmall_rev5_HD ", 
+VT $TQ8027="【Q8-27】 Copy aware source-Xiaohongpingjushuiguangjinghua20180206", 
+VT $TQ8028="【Q8-28】 Copy aware source-Lancome xiaoheipinganpingjinghua180227", 
+VT $TQ8029="【Q8-29】 Copy aware source-Lancome hufupin180130 ", 
+VT $TQ8030="【Q8-30】 Copy aware source-Sanshenghuahuaniangshui   ", 
+VT $TQ8031="【Q8-31】 Copy aware source-Loreal jixuecaoweijinghualu180102 ", 
+VT $TQ8032="【Q8-32】 Copy aware source-Estee Lauder xiaozongpingjinghua  ", 
+
+
+
+
+
+
+VT $TTQ901="【Q9-01】 Equity Attributes - Aupres",
+VT $TTQ902="【Q9-02】 Equity Attributes - Herborist",
+VT $TTQ903="【Q9-03】 Equity Attributes - Chcedo",
+VT $TTQ904="【Q9-04】 Equity Attributes - Clinique",
+VT $TTQ905="【Q9-05】 Equity Attributes - Dabao",
+VT $TTQ906="【Q9-06】 Equity Attributes - Estee Lauder",
+VT $TTQ907="【Q9-07】 Equity Attributes - Pechoin",
+VT $TTQ908="【Q9-08】 Equity Attributes - Innisfree",
+VT $TTQ909="【Q9-09】 Equity Attributes - Inoherb",
+VT $TTQ9010="【Q9-10】 Equity Attributes - Kans",
+VT $TTQ9011="【Q9-11】 Equity Attributes - Lancome",
+VT $TTQ9012="【Q9-12】 Equity Attributes - Loreal",
+VT $TTQ9013="【Q9-13】 Equity Attributes - Olay",
+VT $TTQ9014="【Q9-14】 Equity Attributes - SK-II",
+VT $TTQ9015="【Q9-15】 Equity Attributes - Vichy",
+  
+
+
+VT $TQ10ad="【Q10a】 BUMO Channel",
+VT $TQ10bd="【Q10b】 BUMO Channel",
+VT $TQ11="【Q11】College student",
+
+
+
+
+
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+dm x $h1= 
+
+$w/1   :"National***Aug*([~1])",
+$w/2   :"Sep*([~2])",
+$w/3   :"Nov*([~3])",
+$w/4.$SL/n1   :"Dec*([~4])",
+$w/5.$SL/n1   :"Jan*([~5])",
+$w/6.$SL/n1   :"March*([~6])",
+
+$w/1.($CT/1)   :"Top 4***Aug*([~1])",
+$w/2.($CT/1)   :"Sep*([~2])",
+$w/3.($CT/1)   :"Nov*([~3])",
+$w/4.$SL/n1 .($CT/1)   :"Dec*([~4])",
+$w/5.$SL/n1 .($CT/1)   :"Jan*([~5])",
+$w/6.$SL/n1 .($CT/1)   :"March*([~6])",
+
+$w/1.($CT/1+2)   :"Top 4+A***Aug*([~1])",
+$w/2.($CT/1+2)   :"Sep*([~2])",
+$w/3.($CT/1+2)   :"Nov*([~3])",
+$w/4.$SL/n1 .($CT/1+2)   :"Dec*([~4])",
+$w/5.$SL/n1 .($CT/1+2)  :"Jan*([~5])",
+$w/6.$SL/n1 .($CT/1+2)  :"March*([~6])",
+
+
+$w/1.$CT/2   :"A***Aug*([~1])",
+$w/2.$CT/2   :"Sep*([~2])",
+$w/3.$CT/2   :"Nov*([~3])",
+$w/4.$SL/n1 .$CT/2   :"Dec*([~4])",
+$w/5.$SL/n1 .$CT/2   :"Jan*([~5])",
+$w/6.$SL/n1 .$CT/2   :"March*([~6])",
+
+$w/1.$CT/3   :"B***Aug*([~1])", 
+$w/2.$CT/3   :"Sep*([~2])", 
+$w/3.$CT/3   :"Nov*([~3])", 
+$w/4.$SL/n1.$CT/3   :"Dec*([~4])", 
+$w/5.$SL/n1.$CT/3   :"Jan*([~5])",
+$w/6.$SL/n1.$CT/3   :"March*([~6])",
+
+$w/1.($q2/1+2)  :"China1+/1***Aug*([~1])",
+$w/2.($q2/1+2)  :"Sep*([~2])",
+$w/3.($q2/1+2)  :"Nov*([~3])",
+$w/4.$SL/n1 .($q2/1+2)  :"Dec*([~3])",
+$w/5.$SL/n1 .($q2/1+2)   :"Jan*([~5])",
+$w/6.$SL/n1 .($q2/1+2)   :"March*([~6])",
+
+
+$w/1.$q2/1  :"China1+***Aug*([~1])",
+$w/2.$q2/1  :"Sep*([~2])",
+$w/3.$q2/1  :"Nov*([~3])",
+$w/4.$SL/n1 .$q2/1  :"Dec*([~4])",
+$w/5.$SL/n1 .$q2/1   :"Jan*([~5])",
+$w/6.$SL/n1 .$q2/1   :"March*([~6])",
+
+
+$w/1.$q2/2  :"China1***Aug*([~1])", 
+$w/2.$q2/2  :"Sep*([~2])", 
+$w/3.$q2/2  :"Nov*([~3])", 
+$w/4.$SL/n1 .$q2/2  :"Dec*([~4])",
+$w/5.$SL/n1 .$q2/2   :"Jan*([~5])",
+$w/6.$SL/n1 .$q2/2   :"March*([~6])",
+
+$w/1.($q2/3+4)  :"China2&3***Aug*([~1])",  
+$w/2.($q2/3+4)  :"Sep*([~2])",  
+$w/3.($q2/3+4)  :"Nov*([~3])", 
+$w/4.$SL/n1 .($q2/3+4)  :"Dec*([~4])",
+$w/5.$SL/n1 .($q2/3+4)  :"Jan*([~5])", 
+$w/6.$SL/n1 .($q2/3+4)  :"March*([~6])",
+
+$w/1.$q2/3  :"China2***Aug*([~1])",
+$w/2.$q2/3  :"Sep*([~2])",
+$w/3.$q2/3  :"Nov*([~3])",
+$w/4.$SL/n1 .$q2/3  :"Dec*([~4])",
+$w/5.$SL/n1 .$q2/3   :"Jan*([~5])",
+$w/6.$SL/n1 .$q2/3   :"March*([~6])",
+
+$w/1.$q2/4  :"China3***Aug*([~1])",
+$w/2.$q2/4  :"Sep*([~2])",
+$w/3.$q2/4  :"Nov*([~3])",
+$w/4.$SL/n1 .$q2/4  :"Dec*([~4])",
+$w/5.$SL/n1 .$q2/4   :"Jan*([~5])",
+$w/6.$SL/n1 .$q2/4   :"March*([~6])",
+
+$w/1.$Q1/1   :"18-24***Aug*([~1])", 
+$w/2.$Q1/1   :"Sep*([~2])", 
+$w/3.$Q1/1   :"Nov*([~3])", 
+$w/4.$SL/n1 .$Q1/1   :"Dec*([~4])", 
+$w/5.$SL/n1 .$Q1/1   :"Jan*([~5])",
+$w/6.$SL/n1 .$Q1/1   :"March*([~6])",
+
+$w/1.$Q1/2   :"25-34***Aug*([~1])",
+$w/2.$Q1/2   :"Sep*([~2])",
+$w/3.$Q1/2   :"Nov*([~3])",
+$w/4.$SL/n1 .$Q1/2   :"Dec*([~4])",
+$w/5.$SL/n1 .$Q1/2:"Jan*([~5])",
+$w/6.$SL/n1 .$Q1/2:"March*([~6])",
+
+$w/1.$Q1/3   :"35-44***Aug*([~1])",
+$w/2.$Q1/3   :"Sep*([~2])",
+$w/3.$Q1/3   :"Nov*([~3])",
+$w/4.$SL/n1 .$Q1/3   :"Dec*([~4])",
+$w/5.$SL/n1 .$Q1/3   :"Jan*([~5])",
+$w/6.$SL/n1 .$Q1/3   :"March*([~6])",
+
+$w/1.$Q1/4   :"45-55***Aug*([~1])",
+$w/2.$Q1/4   :"Sep*([~2])",
+$w/3.$Q1/4   :"Nov*([~3])",
+$w/4.$SL/n1 .$Q1/4   :"Dec*([~4])",
+$w/5.$SL/n1 .$Q1/4   :"Jan*([~5])",
+$w/6.$SL/n1 .$Q1/4   :"March*([~6])",
+
+$w/1.$q11/1:"University Student***Aug*([~1])",
+$w/2.$q11/1:"Sep*([~2])",
+$w/3.$q11/1:"Nov*([~3])",
+$w/4.$SL/n1.$q11/1:"Dec*([~4])",
+$w/5.$SL/n1.$q11/1   :"Jan*([~5])",
+$w/6.$SL/n1.$q11/1   :"March*([~6])",
+
+$w/1.$Q1/2.($q2/1+2):"25-34&China1+/1***Aug*([~1])",
+$w/2.$Q1/2.($q2/1+2):"Sep*([~2])",
+$w/3.$Q1/2.($q2/1+2):"Nov*([~3])",
+$w/4.$Q1/2.($q2/1+2):"Dec*([~4])",
+$w/5.$Q1/2.($q2/1+2)   :"Jan*([~5])",
+$w/6.$Q1/2.($q2/1+2)   :"March*([~6])",
+
+
+
+
+xt $h1="Header A ",
+
+dm x $h2=     
+t:"Summary brand***Aupres*([~1])",
+t:"Herborist*([~2])",
+t:"Chcedo*([~3])",
+t:"Clinique*([~4])",
+t:"Dabao*([~5])",
+t:"Estee Lauder*([~6])",
+t:"Pechoin*([~7])",
+t:"Innisfree*([~8])",
+t:"Inoherb*([~9])",
+t:"Kans*([~10])",
+t:"Lancome*([~11])",
+t:"Loreal*([~12])",
+t:"Olay*([~13])",
+t:"SK-ll*([~14])",
+t:"Vichy*([~15])",
+
+
+xt $h2="Equity attributes ",
+
+dm x $h3=  
+$w/1.$Q1/1   :"18-24***Aug*([~1])", 
+$w/2.$Q1/1   :"Sep*([~2])", 
+$w/3.$Q1/1   :"Nov*([~3])", 
+$w/4.$SL/n1 .$Q1/1   :"Dec*([~4])", 
+$w/5.$SL/n1 .$Q1/1   :"Jan*([~5])",
+$w/6.$SL/n1 .$Q1/1   :"March*([~6])",
+
+$w/1.$Q1/2   :"25-34***Aug*([~1])",
+$w/2.$Q1/2   :"Sep*([~2])",
+$w/3.$Q1/2   :"Nov*([~3])",
+$w/4.$SL/n1 .$Q1/2   :"Dec*([~4])",
+$w/5.$SL/n1 .$Q1/2:"Jan*([~5])",
+$w/6.$SL/n1 .$Q1/2:"March*([~6])",
+
+$w/1.$Q1/3   :"35-44***Aug*([~1])",
+$w/2.$Q1/3   :"Sep*([~2])",
+$w/3.$Q1/3   :"Nov*([~3])",
+$w/4.$SL/n1 .$Q1/3   :"Dec*([~4])",
+$w/5.$SL/n1 .$Q1/3   :"Jan*([~5])",
+$w/6.$SL/n1 .$Q1/3   :"March*([~6])",
+
+$w/1.$Q1/4   :"45-55***Aug*([~1])",
+$w/2.$Q1/4   :"Sep*([~2])",
+$w/3.$Q1/4   :"Nov*([~3])",
+$w/4.$SL/n1 .$Q1/4   :"Dec*([~4])",
+$w/5.$SL/n1 .$Q1/4   :"Jan*([~5])",
+$w/6.$SL/n1 .$Q1/4   :"March*([~6])",
+
+xt $h3="age",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
